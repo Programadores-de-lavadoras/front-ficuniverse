@@ -1,7 +1,6 @@
 import {Component, EventEmitter, Input, Output, ViewChild} from '@angular/core';
 import {Chapter} from "../../model/chapter.entity";
 import {NgForm} from "@angular/forms";
-import {ChaptersComponent} from "../../pages/chapters/chapters.component";
 
 @Component({
   selector: 'app-chapter-form',
