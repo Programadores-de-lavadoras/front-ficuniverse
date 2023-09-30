@@ -1,123 +1,11 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "userName": "Menhera",
-      "email": "menhera@mail.com",
-      "password": "password",
-      "urlPhoto": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/menhera-chan-3-1/sticker_28.png?0fce8e4c13ea0763f40b8d577fd192f3",
-      "isAuthor": false
-    },
-    {
-      "id": 2,
-      "userName": "Bruno Díaz",
-      "email": "brunodiaz@mail.com",
-      "password": "password",
-      "urlPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU-iSO5kd5Qk7acXeacucLuhcCTjXiu3SU1fM57yGfKNovY-fhSy4A7NweQmsBVx6oLcU&usqp=CAU",
-      "isAuthor": true
-    },
-    {
-      "id": 3,
-      "userName": "Takehiko Inoue",
-      "email": "tak@mail.com",
-      "password": "password",
-      "urlPhoto": "https://i0.wp.com/www.coyotemag.fr/wp-content/uploads/2018/04/TAKEHIKO-INOUE-02.jpg",
-      "isAuthor": true
-    },
-    {
-      "id": 4,
-      "userName": "Bokuto Uno",
-      "email": "bokuto@mail.com",
-      "password": "password",
-      "urlPhoto": "https://cdn.shopify.com/s/files/1/1061/1924/products/Happy_Emoji_Icon_5c9b7b25-b215-4457-922d-fef519a08b06_grande.png?v=1571606090",
-      "isAuthor": true
-    }
-  ],
-  "fanfics": [
-    {
-      "id": 1,
-      "authorId": 2,
-      "title": "Somebody To love",
-      "synopsis": "Falling in love with a man during the 1950s was never something Taehyung or Jungkook had imagined. Especially when both were married to their beautiful wives.\nOr, the story of two lovers who were never meant for each other, but destiny found its way nonetheless.",
-      "publishedAt": "2022-06-04",
-      "thumbnailUrl": "https://img.wattpad.com/cover/261408854-416-k737009.jpg"
-    },
-    {
-      "id": 2,
-      "authorId": 3,
-      "title": "Roommates",
-      "publishedAt": "2023-06-19",
-      "synopsis": "Jungkook is part of the university boxing team. On a recurring basis, he comes home late at night with injuries or bruises. Taehyung, his roommate, is always there to nurse him back to health and pamper him.",
-      "thumbnailUrl": "https://img.wattpad.com/cover/323497674-416-k192373.jpg"
-    },
-    {
-      "id": 3,
-      "authorId": 3,
-      "title": "Space Voyage",
-      "synopsis": "When 7 boys who barely know each other get stuck in a spaceship hurling through the galaxy for 6 months, things are bound to get messy.",
-      "publishedAt": "2021-05-30",
-      "thumbnailUrl": "https://img.wattpad.com/cover/271568056-416-k330368.jpg"
-    },
-    {
-      "id": 4,
-      "authorId": 4,
-      "title": "Stolen Fate",
-      "synopsis": "With a cub in her arms, Arietta James, a dedicated vet technician in training, flees for her life and the life of the little shifter she's ready to die to protect. Her escape lands her right in the heart of the enemy territory: the shifters.",
-      "publishedAt": "2023-06-16",
-      "thumbnailUrl": "https://img.wattpad.com/cover/313526098-416-k316772.jpg"
-    }
-  ],
-  "fanfic-genres": [
-    {
-      "id": 1,
-      "fanficId": 1,
-      "genreId": 2
-    },
-    {
-      "id": 2,
-      "fanficId": 2,
-      "genreId": 2
-    },
-    {
-      "id": 3,
-      "fanficId": 3,
-      "genreId": 1
-    },
-    {
-      "id": 4,
-      "fanficId": 4,
-      "genreId": 2
-    }
-  ],
-  "genres": [
-    {
-      "id": 1,
-      "name": "Accion"
-    },
-    {
-      "id": 2,
-      "name": "Romance"
-    },
-    {
-      "id": 3,
-      "name": "CienciaFiccion"
-    },
-    {
-      "id": 4,
-      "name": "Comedia"
-    },
-    {
-      "id": 5,
-      "name": "Terror"
-    }
-  ],
   "chapters": [
     {
       "id": 1,
       "bookId": 1,
       "order": 1,
       "title": "Who I Am - How I Come to Be",
-      "content": "Something really cool happens here B)."
+      "content": "This is the cool things that happen here"
     },
     {
       "id": 2,
@@ -166,7 +54,7 @@
       "bookId": 4,
       "order": 1,
       "title": "Prologue",
-      "content": "Long ago, someone once said, \"The brighter the stars, the darker the night.\"\nIt had been some time since she'd last seen a new moon, which had caused her to remember that quote. Of course, she wasn't so conceited as to consider herself a \"star\" in any sense of the word. Those who knew her, however, would certainly consider her one. She came perfectly prepared for every hunt, regardless of whether her target was human or beast. Even if she were to hunt a star, her preparations would put all hunts before it to shame.\nAnd it was with that same level of preparation that her pursuers hounded her tonight. They seemed wholly convinced of their victory, leading her to sincerely think, I see—these people could certainly snuff out a star.\n“Kh…!”\nAs she raced through the trees, bloodlust nipping at her heels, giant claws\nappeared from the darkness, cleaving all in their path. She instantly spun\naround and drew her athame to block, but she was unable to redirect the\nforce, instead finding herself knocked into the air. As her feet left the ground,\ncreating an opening, another set of claws slashed at her in a follow-up strike.\n“Haaaah!”With a firm step in midair, she countered with the blades in both her\nhands, striking down the giant claw before it could tear into its prey. The\ninstant the attacks abated, she landed on the ground and moved onto the\noffensive herself.\n“—?!”\nBlack mist rushed forward, interrupting her. A chill overcame her, and she\njumped back before her eyes even registered anything. She was a hair too\nslow, however, and the mist brushed her left shoulder. An unpleasant shiver\nran through her whole body, making her every hair stand on end. But she had\nno time to think about that at the moment.\f“Fortis flamma maxime!”\nCrimson fell from the sky like large waves born from a sea of fire,\ninstantly turning the surrounding trees to ash from the intense heat and\nrushing straight for her. The girl readied the athames in both hands and spun\nthe two blades, whirling the flames around and around, scattering them and\ndiverting a portion of the heat wave. The ground became a bubbling cauldron\nof lava under the fire. Only the ground directly beneath her was untouched,\nleaving her standing on a small island.\n“I’m impressed you survived. But we both know struggling is useless.”\nIt was a man’s voice, filled with mockery. The girl looked up at the dark\nsky, which was now intensely illuminated by a pale light—an enormous\nmoon on what should have been a moonless night. Of course, this was no\ncelestial body. It was a ball of light created by magic, a basic spell even a\nchild could cast with enough study. She couldn’t stop herself from shivering.\nAnyone who could turn a simple illumination spell into a temporary moon\nmust have access to a massive well of power.\nSix shadows appeared in the sky, illuminated by the fake moon. One\nstood atop an especially tall tree, while another sat on a broom. One was even\nresting on the shoulder of a mysterious giant. The star hunters all looked\ndown on her from their perches.\n“…!”\f“Fortis flamma maxime!”\nCrimson fell from the sky like large waves born from a sea of fire,\ninstantly turning the surrounding trees to ash from the intense heat and\nrushing straight for her. The girl readied the athames in both hands and spun\nthe two blades, whirling the flames around and around, scattering them and\ndiverting a portion of the heat wave. The ground became a bubbling cauldron\nof lava under the fire. Only the ground directly beneath her was untouched,\nleaving her standing on a small island.\n“I’m impressed you survived. But we both know struggling is useless.”\nIt was a man’s voice, filled with mockery. The girl looked up at the dark\nsky, which was now intensely illuminated by a pale light—an enormous\nmoon on what should have been a moonless night. Of course, this was no\ncelestial body. It was a ball of light created by magic, a basic spell even a\nchild could cast with enough study. She couldn’t stop herself from shivering.\nAnyone who could turn a simple illumination spell into a temporary moon\nmust have access to a massive well of power.\nSix shadows appeared in the sky, illuminated by the fake moon. One\nstood atop an especially tall tree, while another sat on a broom. One was even\nresting on the shoulder of a mysterious giant. The star hunters all looked\ndown on her from their perches.\n“…!”Suddenly, her left shoulder began itching uncontrollably where the black\nmist had touched her, and she didn’t even have time to react before the sound\nof cackling laughter rose from within her clothes. Biting through the cloth, a\nhideously twisted human face about the size of a child’s fist appeared.\nWithout hesitation, she cut away the tumor that had appeared on her body,\nalong with a section of her shoulder. The mass of flesh dropped to the ground\nwith a wet plop. One of the shadows watching lamented:\n“Ahhh, how cruel you are to cut me off! I’m lonely, so lonely! Let me be\none with you!”"
+      "content": "Long ago, someone once said,"
     }
   ]
 }
