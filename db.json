@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "comentarios": [
+    {
+      "Usuario": "Carlos123",
+      "Contenido": "Excelente capitulo!",
+      "Fecha": "2023-09-30T05:00:00.000Z",
+      "id": 1
+    },
+    {
+      "Usuario": "JorgeGC",
+      "Contenido": "Maravilloso",
+      "Fecha": "2023-09-29T05:00:00.000Z",
+      "id": 2
+    },
+    {
+      "Usuario": "Loleao",
+      "Contenido": "Wasa",
+      "Fecha": "2023-09-15T05:00:00.000Z",
+      "id": 3
+    }
+  ]
+}
