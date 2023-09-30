@@ -1,63 +1,49 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {HttpClientModule} from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CreationsComponent } from './public/pages/creations/creations.component';
-import { WriteFanficComponent } from './public/pages/write-fanfic/write-fanfic.component';
-import { AuthorsComponent } from './public/pages/authors/authors.component';
-
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {MatTableModule} from "@angular/material/table";
-import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from "@angular/material/button";
+import {MatTableModule} from '@angular/material/table';
+import { EmpAddEditComponent } from './emp-add-edit/emp-add-edit.component';
+import {MatDialogModule} from "@angular/material/dialog";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from "@angular/material/core";
+import {ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatSortModule} from "@angular/material/sort";
-import {MatButtonModule} from "@angular/material/button";
-import {MatToolbarModule} from "@angular/material/toolbar";
-import {MatDividerModule} from '@angular/material/divider';
-import {MatIconModule} from "@angular/material/icon";
-import {MatCardModule} from "@angular/material/card";
-import {MatGridListModule} from "@angular/material/grid-list";
-import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
-import { FanficsComponent } from './ficuniverse/pages/fanfics/fanfics.component';
-import { FanficFormComponent } from './ficuniverse/components/fanfic-form/fanfic-form.component';
-import { FanficsService } from './ficuniverse/services/fanfics.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreationsComponent,
-    WriteFanficComponent,
-    AuthorsComponent,
-    PageNotFoundComponent,
-    FanficsComponent,
-    FanficFormComponent
+    EmpAddEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    FormsModule,
-    ReactiveFormsModule,
     MatTableModule,
-    MatPaginatorModule,
+    MatDialogModule,
     MatFormFieldModule,
-    MatDividerModule,
     MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatPaginatorModule,
     MatSortModule,
-    MatCardModule,
-    MatGridListModule
   ],
-  providers: [FanficsService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
