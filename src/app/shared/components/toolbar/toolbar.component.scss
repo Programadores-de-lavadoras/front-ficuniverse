@@ -1,0 +1,15 @@
+.toolbar{
+  background-color: white;
+  display: flex;
+  border-bottom: 2px solid #eee;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-bar{
+  min-width: 300px;
+  width: 400px;
+  display: flex;
+  margin-top: 20px;
+  padding: 0px 100px;
+}
+
