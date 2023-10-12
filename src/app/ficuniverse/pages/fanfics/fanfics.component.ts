@@ -8,7 +8,7 @@ import {MatSort} from "@angular/material/sort";
 @Component({
   selector: 'app-fanfics',
   templateUrl: './fanfics.component.html',
-  styleUrls: ['./fanfics.component.css']
+  styleUrls: ['./fanfics.component.scss']
 })
 export class FanficsComponent implements OnInit, AfterViewInit{
 

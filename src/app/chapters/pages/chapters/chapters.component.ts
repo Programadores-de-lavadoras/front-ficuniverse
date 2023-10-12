@@ -8,7 +8,7 @@ import {ChapterService} from "../../services/chapter.service";
 @Component({
   selector: 'app-chapters',
   templateUrl: './chapters.component.html',
-  styleUrls: ['./chapters.component.css']
+  styleUrls: ['./chapters.component.scss']
 })
 export class ChaptersComponent implements OnInit, AfterViewInit{
   chapterData: Chapter;

@@ -5,7 +5,7 @@ import {NgForm} from "@angular/forms";
 @Component({
   selector: 'app-chapter-form',
   templateUrl: './chapter-form.component.html',
-  styleUrls: ['./chapter-form.component.css']
+  styleUrls: ['./chapter-form.component.scss']
 })
 export class ChapterFormComponent {
   @Input()chapter: Chapter;

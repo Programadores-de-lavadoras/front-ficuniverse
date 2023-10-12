@@ -5,7 +5,7 @@ import { Fanfic } from '../../model/fanfic.entity';
 @Component({
   selector: 'app-fanfic-form',
   templateUrl: './fanfic-form.component.html',
-  styleUrls: ['./fanfic-form.component.css']
+  styleUrls: ['./fanfic-form.component.scss']
 })
 export class FanficFormComponent {
 
