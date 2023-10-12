@@ -35,6 +35,10 @@ import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-fo
 import { FanficsComponent } from './ficuniverse/pages/fanfics/fanfics.component';
 import { FanficFormComponent } from './ficuniverse/components/fanfic-form/fanfic-form.component';
 import { FanficsService } from './ficuniverse/services/fanfics.service';
+import { EmpAddEditComponent } from './emp-add-edit/emp-add-edit.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from "@angular/material/core";
 
 
 @NgModule({
@@ -55,7 +59,8 @@ import { FanficsService } from './ficuniverse/services/fanfics.service';
     AuthorsComponent,
     PageNotFoundComponent,
     FanficsComponent,
-    FanficFormComponent
+    FanficFormComponent,
+    EmpAddEditComponent
   ],
   imports: [
     BrowserModule,
@@ -68,19 +73,15 @@ import { FanficsService } from './ficuniverse/services/fanfics.service';
     MatSelectModule,
     FormsModule,
     MatButtonModule,
-    MatIconModule,
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
     HttpClientModule,
-    FormsModule,
     ReactiveFormsModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatFormFieldModule,
+    MatDialogModule,
     MatDividerModule,
-    MatInputModule,
-    MatSortModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     MatCardModule,
     MatGridListModule
   ],
