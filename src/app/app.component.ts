@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'front-ficuniverse';
+  title = 'fanfic-probando';
+  options = [
+    { path: '/creations', title: 'Creations'},
+    //{ path: '/write-fanfic', title: 'Write Fanfic'},
+    { path: '/authors', title: 'Authors'},
+    { path: '/ficuniverse/fanfic', title: 'Fanfics'}
+  ]
 }

@@ -1,3 +1,9 @@
 <app-toolbar></app-toolbar>
+<mat-toolbar class="toolbar-personalized">
+  <img src="assets/images/logo.jpg" alt="fanfic-logo" style="width: 200px; height: 73px;">
+  <div class="mat-spacer"></div>
+  <a mat-button *ngFor="let option of options"
+     [routerLink]="option.path">{{ option.title }}</a>
+</mat-toolbar>
 <router-outlet></router-outlet>
 <app-footer-content></app-footer-content>
