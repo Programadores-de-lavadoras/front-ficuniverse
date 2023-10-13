@@ -12,15 +12,31 @@
               <mat-icon>close</mat-icon>
             </button>
           </mat-form-field>
-        <a routerLink="chapters" >
-          <button mat-button color="primary">Chapters</button>
+        <a routerLink="creations" >
+          <button mat-button color="primary">Creations</button>
         </a>
-        <a routerLink="writing">
-          <button mat-button color="primary">Write your fanfic</button>
-        </a>
+        <button mat-button [matMenuTriggerFor]="writingMenu" color="primary">
+          Write your fanfic
+          <mat-icon>keyboard_arrow_down</mat-icon>
+        </button>
         <a routerLink="authors">
           <button mat-button color="primary">Authors</button>
         </a>
+        <button mat-button [matMenuTriggerFor]="crudMenu" color="primary">Cruds
+          <mat-icon>keyboard_arrow_down</mat-icon>
+        </button>
+
+        <mat-menu #writingMenu="matMenu">
+          <button mat-menu-item routerLink="my-fanfics/new">New fanfic</button>
+          <button mat-menu-item routerLink="my-fanfics">My Fanfics</button>
+        </mat-menu>
+        <mat-menu #crudMenu="matMenu">
+          <button mat-menu-item routerLink="chapters-crud">Chapters</button>
+          <button mat-menu-item routerLink="fanfic-crud">Fanfics</button>
+          <button mat-menu-item routerLink="users-crud">Users</button>
+          <button mat-menu-item routerLink="comments-crud">Comments</button>
+        </mat-menu>
+
       </div>
 
     </div>

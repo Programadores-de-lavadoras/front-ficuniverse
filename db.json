@@ -15,25 +15,6 @@
   ],
   "profile": {
     "name": "typicode"
-  },
-  "usuarios": [
-    {
-      "Usuario": "pablito616",
-      "contrasenia": "insano63",
-      "correo": "pablito@gmail.com",
-      "id": 1
-    },
-    {
-      "Usuario": "Escritor desconocido 301",
-      "contrasenia": "123543634",
-      "correo": "anonimo63@gmail.com",
-      "id": 2
-    },
-    {
-      "Usuario": "sinfonia31",
-      "contrasenia": "sinfony123124",
-      "correo": "sinfoniasoledad@gmail.com",
-      "id": 3
-    }
-  ]
+  }
+
 }

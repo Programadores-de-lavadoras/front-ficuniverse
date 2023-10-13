@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, Output, ViewChild} from '@angular/core';
 import {NgForm} from "@angular/forms";
-import { Fanfic } from '../../model/fanfic.entity';
+import {Fanfic} from "../../model/fanfic.entity";
 
 @Component({
   selector: 'app-fanfic-form',

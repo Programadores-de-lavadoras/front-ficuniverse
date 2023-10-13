@@ -10,23 +10,25 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import { CreationsComponent } from './public/pages/creations/creations.component';
 import { WriteFanficComponent } from './public/pages/write-fanfic/write-fanfic.component';
 
-import {MatInputModule} from "@angular/material/input";
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from "@angular/material/button";
+import {MatTableModule} from '@angular/material/table';
+import { EmpAddEditComponent } from './emp-add-edit/emp-add-edit.component';
+import {MatDialogModule} from "@angular/material/dialog";
 import {MatFormFieldModule} from "@angular/material/form-field";
+
+import {MatInputModule} from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {MatButtonModule} from "@angular/material/button";
 import {MatDividerModule} from '@angular/material/divider';
 import { AvatarMenuComponent } from './shared/components/avatar-menu/avatar-menu.component';
 import { NotificationMenuComponent } from './shared/components/notification-menu/notification-menu.component';
-import {MatIconModule} from "@angular/material/icon";
 import { ChapterFormComponent } from './chapters/components/chapter-form/chapter-form.component';
 import { ChaptersComponent } from './chapters/pages/chapters/chapters.component';
-import {MatTableModule} from "@angular/material/table";
 import {MatSortModule} from "@angular/material/sort";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import { FooterContentComponent } from './chapters/components/footer-content/footer-content.component';
 import { HomeComponent } from './public/pages/home/home.component';
-import { WriteComponent } from './public/pages/write/write.component';
 import { AuthorsComponent } from './public/pages/authors/authors.component';
 import { SearchComponent } from './public/pages/search/search.component';
 import {MatCardModule} from "@angular/material/card";
@@ -35,10 +37,13 @@ import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-fo
 import { FanficsComponent } from './ficuniverse/pages/fanfics/fanfics.component';
 import { FanficFormComponent } from './ficuniverse/components/fanfic-form/fanfic-form.component';
 import { FanficsService } from './ficuniverse/services/fanfics.service';
-import { EmpAddEditComponent } from './emp-add-edit/emp-add-edit.component';
-import {MatDialogModule} from "@angular/material/dialog";
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from "@angular/material/core";
+import { CommentsFormComponent } from './comments/components/comments-form/comments-form.component';
+import { CommentsComponent } from './comments/pages/comments/comments.component';
+import { UsersFormComponent } from './users/components/users-form/users-form.component';
+import { UsersComponent } from './users/pages/users/users.component';
+import {MatMenuModule} from "@angular/material/menu";
 
 
 @NgModule({
@@ -51,7 +56,6 @@ import {MatNativeDateModule} from "@angular/material/core";
     ChaptersComponent,
     FooterContentComponent,
     HomeComponent,
-    WriteComponent,
     AuthorsComponent,
     SearchComponent,
     CreationsComponent,
@@ -60,12 +64,17 @@ import {MatNativeDateModule} from "@angular/material/core";
     PageNotFoundComponent,
     FanficsComponent,
     FanficFormComponent,
-    EmpAddEditComponent
+    EmpAddEditComponent,
+    CommentsFormComponent,
+    CommentsComponent,
+    UsersFormComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatToolbarModule,
     MatIconModule,
     MatInputModule,
@@ -76,14 +85,14 @@ import {MatNativeDateModule} from "@angular/material/core";
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
-    HttpClientModule,
     ReactiveFormsModule,
     MatDialogModule,
     MatDividerModule,
     MatDatepickerModule,
     MatNativeDateModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatMenuModule,
   ],
   providers: [FanficsService],
   bootstrap: [AppComponent]
