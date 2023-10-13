@@ -1,11 +1,11 @@
 import {Component, EventEmitter, Input, Output, ViewChild} from '@angular/core';
 import {NgForm} from "@angular/forms";
-import { Fanfic } from '../../model/fanfic.entity';
+import {Fanfic} from "../../model/fanfic.entity";
 
 @Component({
   selector: 'app-fanfic-form',
   templateUrl: './fanfic-form.component.html',
-  styleUrls: ['./fanfic-form.component.css']
+  styleUrls: ['./fanfic-form.component.scss']
 })
 export class FanficFormComponent {
 

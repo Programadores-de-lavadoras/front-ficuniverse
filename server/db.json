@@ -1,4 +1,62 @@
 {
+  "chapters": [
+    {
+      "id": 1,
+      "bookId": 1,
+      "order": 1,
+      "title": "Who I Am - How I Come to Be",
+      "content": "This is the cool things that happen here"
+    },
+    {
+      "id": 2,
+      "bookId": 1,
+      "order": 2,
+      "title": "War is Declared",
+      "content": "Something really cool happens here B)."
+    },
+    {
+      "id": 3,
+      "bookId": 1,
+      "order": 3,
+      "title": "Black Dawn",
+      "content": "Something really cool happens here B)."
+    },
+    {
+      "id": 4,
+      "bookId": 1,
+      "order": 4,
+      "title": "Friend in Need",
+      "content": "Something really cool happens here B)."
+    },
+    {
+      "id": 5,
+      "bookId": 2,
+      "order": 1,
+      "title": "Shinmen Takezo",
+      "content": "Something really cool happens here B)."
+    },
+    {
+      "id": 6,
+      "bookId": 2,
+      "order": 2,
+      "title": "Akemi",
+      "content": "Something really cool happens here B)."
+    },
+    {
+      "id": 7,
+      "bookId": 2,
+      "order": 3,
+      "title": "Oko",
+      "content": "Something really cool happens here B)."
+    },
+    {
+      "id": 8,
+      "bookId": 4,
+      "order": 1,
+      "title": "Prologue",
+      "content": "Long ago, someone once said,"
+    }
+  ],
   "fanfics": [
     {
       "id": 1,
@@ -49,6 +107,46 @@
       "status_id": "1",
       "saga_id": "1",
       "id": 5
+    }
+  ],
+  "usuarios": [
+    {
+      "Usuario": "pablito616",
+      "contrasenia": "insano63",
+      "correo": "pablito@gmail.com",
+      "id": 1
+    },
+    {
+      "Usuario": "Escritor desconocido 301",
+      "contrasenia": "123543634",
+      "correo": "anonimo63@gmail.com",
+      "id": 2
+    },
+    {
+      "Usuario": "sinfonia31",
+      "contrasenia": "sinfony123124",
+      "correo": "sinfoniasoledad@gmail.com",
+      "id": 3
+    }
+  ],
+  "comentarios": [
+    {
+      "Usuario": "Carlos123",
+      "Contenido": "Excelente capitulo!",
+      "Fecha": "2023-09-30T05:00:00.000Z",
+      "id": 1
+    },
+    {
+      "Usuario": "JorgeGC",
+      "Contenido": "Maravilloso",
+      "Fecha": "2023-09-29T05:00:00.000Z",
+      "id": 2
+    },
+    {
+      "Usuario": "Loleao",
+      "Contenido": "Wasa",
+      "Fecha": "2023-09-15T05:00:00.000Z",
+      "id": 3
     }
   ]
 }
