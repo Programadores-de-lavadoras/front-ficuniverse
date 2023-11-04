@@ -1,0 +1,26 @@
+<mat-card class="fic-card" (click)="clicked()">
+    <div class="fic-card-image">
+      <img mat-card-image [src]="fanfic.thumbnail" [alt]="fanfic.title" height="300px" width="auto">
+    </div>
+    <mat-card-content>
+      <div class="fic-card-text">
+        <h1>{{fanfic.title}}</h1>
+        <div class="fic-stats">
+          <div class="stats-view">
+            <h1>views</h1>
+          </div>
+          <div class="stats-view">
+            <h1>favorites</h1>
+          </div>
+          <div class="stats-view">
+            <h1>chapters</h1>
+          </div>
+        </div>
+        <div class="fic-summary">
+          <p class="fic-summary-text">{{fanfic.summary}}</p>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+
