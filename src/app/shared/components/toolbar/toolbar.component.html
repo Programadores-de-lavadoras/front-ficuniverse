@@ -1,17 +1,14 @@
-<div class="navbar">
+<div class="navbar" >
   <mat-toolbar class="toolbar">
     <a routerLink="/">
       <img src="assets/ficuniverse-logo.png" style="height: 60px; margin-top: 20px; padding-left: 50px " alt="FicUniverse Logo">
     </a>
-    <div *ngIf="userLogged(); else loginButton"  >
+
+    <div *ngIf="userLogged(); else loginButton"   >
       <div style="display: flex; align-items: center">
-        <mat-form-field class="search-bar" routerLink="search">
-            <mat-label>Search by title or author...</mat-label>
-            <input class="search-input" matInput type="text" [(ngModel)]="value" >
-            <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
+        <a routerLink="search">
+          <button mat-button color="primary">Search</button>
+        </a>
         <a routerLink="creations" >
           <button mat-button color="primary">Creations</button>
         </a>

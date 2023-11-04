@@ -7,8 +7,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './shared/components/toolbar/toolbar.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
-import { CreationsComponent } from './public/pages/creations/creations.component';
-import { WriteFanficComponent } from './public/pages/write-fanfic/write-fanfic.component';
+import { CreationsComponent } from './ficuniverse/pages/creations/creations.component';
+import { WriteFanficComponent } from './ficuniverse/pages/write-fanfic/write-fanfic.component';
 
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from "@angular/material/button";
@@ -16,6 +16,7 @@ import {MatTableModule} from '@angular/material/table';
 import { EmpAddEditComponent } from './emp-add-edit/emp-add-edit.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatBottomSheet, MatBottomSheetModule} from "@angular/material/bottom-sheet";
 
 import {MatInputModule} from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
@@ -27,10 +28,10 @@ import { ChapterFormComponent } from './chapters/components/chapter-form/chapter
 import { ChaptersComponent } from './chapters/pages/chapters/chapters.component';
 import {MatSortModule} from "@angular/material/sort";
 import {MatPaginatorModule} from "@angular/material/paginator";
-import { FooterContentComponent } from './chapters/components/footer-content/footer-content.component';
+import { FooterContentComponent } from './shared/components/footer-content/footer-content.component';
 import { HomeComponent } from './public/pages/home/home.component';
 import { AuthorsComponent } from './public/pages/authors/authors.component';
-import { SearchComponent } from './public/pages/search/search.component';
+import { SearchComponent } from './ficuniverse/pages/search/search.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
@@ -44,6 +45,13 @@ import { CommentsComponent } from './comments/pages/comments/comments.component'
 import { UsersFormComponent } from './users/components/users-form/users-form.component';
 import { UsersComponent } from './users/pages/users/users.component';
 import {MatMenuModule} from "@angular/material/menu";
+import { FicSearchCardComponent } from './ficuniverse/components/fic-search-card/fic-search-card.component';
+import { CategorySheetComponent } from './ficuniverse/components/category-sheet/category-sheet.component';
+import { TagSheetComponent } from './ficuniverse/components/tag-sheet/tag-sheet.component';
+import {MatListModule} from "@angular/material/list";
+import {MatLegacyChipsModule} from "@angular/material/legacy-chips";
+import {MatChipsModule} from "@angular/material/chips";
+import {SharedDataService} from "./shared/services/shared-data.service";
 
 
 @NgModule({
@@ -68,7 +76,10 @@ import {MatMenuModule} from "@angular/material/menu";
     CommentsFormComponent,
     CommentsComponent,
     UsersFormComponent,
-    UsersComponent
+    UsersComponent,
+    FicSearchCardComponent,
+    CategorySheetComponent,
+    TagSheetComponent,
   ],
   imports: [
     BrowserModule,
@@ -93,8 +104,12 @@ import {MatMenuModule} from "@angular/material/menu";
     MatCardModule,
     MatGridListModule,
     MatMenuModule,
+    MatBottomSheetModule,
+    MatListModule,
+    MatLegacyChipsModule,
+    MatChipsModule,
   ],
-  providers: [FanficsService],
+  providers: [FanficsService,SharedDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

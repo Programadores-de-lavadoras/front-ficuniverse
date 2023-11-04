@@ -1,18 +1,20 @@
 {
   "chapters": [
     {
-      "id": 1,
-      "bookId": 1,
-      "order": 1,
-      "title": "Who I Am - How I Come to Be",
-      "content": "This is the cool things that happen here"
-    },
-    {
       "id": 2,
       "bookId": 1,
       "order": 2,
       "title": "War is Declared",
-      "content": "Something really cool happens here B)."
+      "content": "Something really cool happens here B).",
+      "comments": [
+        {
+          "Usuario": "Loleao",
+          "Contenido": "Wasa",
+          "Fecha": "2023-09-15T05:00:00.000Z",
+          "id": 3,
+          "chapter_id": 2
+        }
+      ]
     },
     {
       "id": 3,
@@ -55,58 +57,123 @@
       "order": 1,
       "title": "Prologue",
       "content": "Long ago, someone once said,"
+    },
+    {
+      "bookId": "1",
+      "order": "6",
+      "title": "this",
+      "content": "that",
+      "id": 9
     }
   ],
   "fanfics": [
     {
       "id": 1,
-      "title": "La Luz de Edoras (Legolas x OC)",
+      "title": "Somebody to love",
       "author": "SyadFanfic",
       "summary": "(Legolas x OC) Todo el mundo tiene derecho a escoger su propio destino. Érewyn es la hermana menor de Éowyn y Éomer, y es un auténtico espíritu de la llanura de Rohan, completamente opuesto a su hermana, que siempre ha sido una guerrera. Cuando su padre es asesinado por los orcos, Érewyn se ve obligada a huir de su hogar y a emprender un peligroso viaje para encontrar un nuevo lugar al que llamar hogar..",
       "publication_date": "2023-07-20",
       "language_id": 1,
       "status_id": 1,
-      "saga_id": 1
+      "saga_id": 1,
+      "thumbnail": "https://img.wattpad.com/cover/261408854-256-k737009.jpg",
+      "chapters": [
+        {
+          "id": 1,
+          "bookId": 1,
+          "order": 1,
+          "title": "Who I Am - How I Come to Be",
+          "content": "This is the cool things that happen here"
+        },
+        {
+          "id": 2,
+          "bookId": 1,
+          "order": 2,
+          "title": "War is Declared",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 3,
+          "bookId": 1,
+          "order": 3,
+          "title": "Black Dawn",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 4,
+          "bookId": 1,
+          "order": 4,
+          "title": "Friend in Need",
+          "content": "Something really cool happens here B)."
+        }
+      ]
     },
     {
       "id": 2,
-      "title": "Born to Die (Terminada)",
+      "title": "Roommates",
       "author": "Scarlet Grant",
       "summary": "El anillo único había sido destruido, el heredero perdido de Gondor, Aragorn hijo de Arathror, había vuelto, la era del hombre había comenzado y así lentamente los pueblos de la Tierra Media iban recuperando la paz. Pero un nuevo mal se cierne sobre el mundo, un mal que amenaza con destruirlo todo. Frodo, Sam, Merry y Pippin deberán volver a reunirse para enfrentarse a esta nueva amenaza, pero esta vez no estarán solos. Se les unirán nuevos aliados, entre ellos un misterioso joven que podría ser la clave para salvar la Tierra Media.",
       "publication_date": "2022-12-25",
       "language_id": 1,
       "status_id": 2,
-      "saga_id": 1
+      "saga_id": 1,
+      "thumbnail": "https://img.wattpad.com/cover/323497674-256-k192373.jpg",
+      "chapters": [
+        {
+          "id": 5,
+          "bookId": 2,
+          "order": 1,
+          "title": "Shinmen Takezo",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 6,
+          "bookId": 2,
+          "order": 2,
+          "title": "Akemi",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 7,
+          "bookId": 2,
+          "order": 3,
+          "title": "Oko",
+          "content": "Something really cool happens here B)."
+        }
+      ]
     },
     {
       "id": 3,
-      "title": "La Montaña del Norte",
+      "title": "La teoría de Kim",
       "author": "Azeneth2523",
       "summary": "Hartlyn Black nunca despertó de la Maldición de la Muerte. En cambio, despertó en otro mundo, sola. Tan sola, que la Muerte le había ofrecido un compañero. Un guardia de la Montaña del Norte. Hartlyn deberá aprender a adaptarse a su nueva vida, a un mundo que no conoce y a un compañero que no entiende. Pero lo que Hartlyn no sabe es que, en realidad, su destino está ligado al de la Montaña del Norte y que ella es la única que puede salvarla.",
       "publication_date": "2023-05-01",
       "language_id": 2,
       "status_id": 1,
-      "saga_id": 2
+      "saga_id": 2,
+      "thumbnail": "https://www.planetadelibros.com.pe/usuaris/libros/fotos/385/m_libros/portada_la-teoria-de-kim_jay-sandoval_202308172238.png"
     },
     {
       "id": 4,
-      "title": "EL CIERVO BLANCO",
+      "title": "Unwanted butterflies",
       "author": "tragedy1896",
       "summary": "Essie Gardner, una estudiante de historia, era una persona completamente normal, a quien nada extraordinario le ocurría. Con motivo de su cumpleaños número veinte, Essie recibe un regalo inesperado: un anillo. Un anillo que, según la leyenda, es el único que puede derrotar a Sauron. Essie se verá obligada a viajar a la Tierra Media para cumplir su destino, pero en el camino se encontrará con peligros que nunca imaginó.",
       "publication_date": "2023-03-08",
       "language_id": 2,
       "status_id": 1,
-      "saga_id": 1
+      "saga_id": 1,
+      "thumbnail": "https://img.wattpad.com/cover/157344127-416-k207140.jpg"
     },
     {
-      "title": "La Última Esperanza",
+      "title": "Pobre Kim",
       "author": "El_Hobbit_Gris",
       "summary": "Cinco años después de la Guerra del Anillo, Sauron ha regresado. Esta vez, no hay un Anillo Único para detenerlo. Frodo, Sam, Merry y Pippin deberán reunir a la Comunidad para enfrentarse a este nuevo desafío.",
       "publication_date": "2023-08-10",
       "language_id": "2",
       "status_id": "1",
       "saga_id": "1",
-      "id": 5
+      "id": 5,
+      "thumbnail": "https://img.wattpad.com/cover/103324876-416-k860974.jpg"
     }
   ],
   "usuarios": [
@@ -134,19 +201,81 @@
       "Usuario": "Carlos123",
       "Contenido": "Excelente capitulo!",
       "Fecha": "2023-09-30T05:00:00.000Z",
-      "id": 1
+      "id": 1,
+      "chapter_id": 1
     },
     {
       "Usuario": "JorgeGC",
       "Contenido": "Maravilloso",
       "Fecha": "2023-09-29T05:00:00.000Z",
-      "id": 2
+      "id": 2,
+      "chapter_id": 1
     },
     {
       "Usuario": "Loleao",
       "Contenido": "Wasa",
       "Fecha": "2023-09-15T05:00:00.000Z",
-      "id": 3
+      "id": 3,
+      "chapter_id": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "action",
+      "selected": false
+    },
+    {
+      "id": 2,
+      "name": "drama",
+      "selected": false
+    },
+    {
+      "id": 3,
+      "name": "comedy",
+      "selected": false
+    },
+    {
+      "id": 4,
+      "name": "thriller",
+      "selected": false
+    },
+    {
+      "id": 5,
+      "name": "romance",
+      "selected": false
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "bl",
+      "selected": false
+    },
+    {
+      "id": 2,
+      "name": "furry",
+      "selected": false
+    },
+    {
+      "id": 3,
+      "name": "yuri",
+      "selected": false
+    },
+    {
+      "id": 4,
+      "name": "yaoi",
+      "selected": false
+    },
+    {
+      "id": 5,
+      "name": "character x reader",
+      "selected": false
+    },
+    {
+      "id": 6,
+      "name": "enemy to lovers",
+      "selected": false
     }
   ]
 }
