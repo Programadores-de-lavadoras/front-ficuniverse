@@ -7,6 +7,7 @@ export class Fanfic {
     language_id: number;
     status_id: number;
     saga_id: number;
+    thumbnail: string;
     constructor(){
         this.id = 0;
         this.title = '';
@@ -16,6 +17,7 @@ export class Fanfic {
         this.language_id = 0;
         this.status_id = 0;
         this.saga_id = 0;
+        this.thumbnail = '';
     }
 }
 

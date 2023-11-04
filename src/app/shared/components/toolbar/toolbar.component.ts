@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {SharedDataService} from "../../services/shared-data.service";
 
 @Component({
   selector: 'app-toolbar',
@@ -6,7 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./toolbar.component.scss']
 })
 export class ToolbarComponent {
-  value: any;
+  value: any = '';
+
+  constructor(private sharedData: SharedDataService) {
+  }
+
+onInputChange(){
+    this.sharedData.changeInput(this.value);
+}
 
   userLogged(): boolean{
     return true;

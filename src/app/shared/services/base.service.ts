@@ -41,7 +41,7 @@ export class BaseService<T> {
   }
 
   getAll(){
-    return this.http.get<T>(this.resourcePath(), this.httpOptions)
+    return this.http.get<T[]>(this.resourcePath(), this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 }
