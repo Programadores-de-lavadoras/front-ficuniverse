@@ -52,23 +52,8 @@ export class SearchComponent implements OnInit{
       }
     });
 
-
-      //const interval$ = interval(1000);
-      //interval$.subscribe(() =>{
-        //this.searchingFanfic();
-      //})
-
   }
-  /*filteringFanfics(): {
-    if(this.fanficsFiltered.length != 0){
-      for (let i = 0; i<this.fanficsFiltered.length; i++){
-        if(this.fanficsFiltered[i].title == fanficTitle){
-          return true;
-        }
-      }
-    }
-    return false;
-  }*/
+
   searchingFanfic(){
       console.log(this.value);
       if(this.value == '') {
