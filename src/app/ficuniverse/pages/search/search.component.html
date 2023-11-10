@@ -26,25 +26,31 @@
       </button>
     </div>
     <mat-menu #sortingMenu="matMenu">
-      <button mat-menu-item >Recent Upload</button>
-      <button mat-menu-item >Old Upload</button>
-      <button mat-menu-item >Most Views</button>
-      <button mat-menu-item >Most Favorites</button>
-      <button mat-menu-item >Alphabetical (A-Z)</button>
-      <button mat-menu-item >Alphabetical (Z-A)</button>
+      <button mat-menu-item (click)="sortingBy(1)">Recent Upload</button>
+      <button mat-menu-item (click)="sortingBy(2)">Old Upload</button>
+      <button mat-menu-item (click)="sortingBy(3)">Most Views</button>
+      <button mat-menu-item (click)="sortingBy(4)">Most Favorites</button>
+      <button mat-menu-item (click)="sortingBy(5)">Alphabetical (A-Z)</button>
+      <button mat-menu-item (click)="sortingBy(6)">Alphabetical (Z-A)</button>
     </mat-menu>
   </mat-toolbar>
 
 </div>
-<div class="search-title">
-  <h1>New releases</h1>
-</div>
-<div class="fic-cards" *ngIf="!searching ; else searchingTemplate">
-  <app-fic-search-card *ngFor="let fanfic of fanfics" [fanfic] = fanfic></app-fic-search-card>
+
+<div  *ngIf="!searching && !filtering ; else searchingTemplate">
+  <div class="search-title">
+    <h1>New releases</h1>
+  </div>
+  <div class="fic-cards">
+    <app-fic-search-card *ngFor="let fanfic of fanfics" [fanfic] = fanfic></app-fic-search-card>
+  </div>
 </div>
 <ng-template #searchingTemplate>
-  <div  class="fic-cards" >
-    <app-fic-search-card *ngFor="let fanfic of fanficsFiltered" [fanfic] = fanfic></app-fic-search-card>
+  <div class="search-title">
+    <h1>Search results</h1>
+  </div>
+  <div class="fic-cards" >
+    <app-fic-search-card *ngFor="let fanfic of fanficsSearched" [fanfic] = fanfic></app-fic-search-card>
   </div>
 </ng-template>
 

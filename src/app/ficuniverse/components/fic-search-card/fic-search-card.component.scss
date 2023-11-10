@@ -20,17 +20,19 @@
 .fic-stats{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .stats-view{
-  margin: 15px;
+  margin: 10px;
 }
 
 .fic-summary{
   display: -webkit-box;
-  min-height: 150px;
-  max-height: 170px;
-  max-width: 400px;
+  min-height: 100px;
+  max-height: 120px;
+  max-width: 450px;
+  min-width: 350px;
   //border: 1px solid #ccc;
 }
 
