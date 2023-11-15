@@ -52,6 +52,8 @@ import {MatListModule} from "@angular/material/list";
 import {MatLegacyChipsModule} from "@angular/material/legacy-chips";
 import {MatChipsModule} from "@angular/material/chips";
 import {SharedDataService} from "./shared/services/shared-data.service";
+import {CarouselModule} from "./public/carousel/carousel.module";
+import { HomeFanficComponent } from './public/components/home-fanfic/home-fanfic.component';
 
 
 @NgModule({
@@ -80,6 +82,7 @@ import {SharedDataService} from "./shared/services/shared-data.service";
     FicSearchCardComponent,
     CategorySheetComponent,
     TagSheetComponent,
+    HomeFanficComponent,
   ],
   imports: [
     BrowserModule,
@@ -108,6 +111,7 @@ import {SharedDataService} from "./shared/services/shared-data.service";
     MatListModule,
     MatLegacyChipsModule,
     MatChipsModule,
+    CarouselModule
   ],
   providers: [FanficsService,SharedDataService],
   bootstrap: [AppComponent]

@@ -12,6 +12,7 @@ export class CategorySheetComponent implements OnInit {
   categoriesList: Array<Category> = [];
   categories: Array<Category> = [];
   @Output()categorySender= new EventEmitter<Array<Category>>();
+  @Output()filterState = new EventEmitter<boolean>();
   constructor(private categoryService: CategoriesService, private _bottomSheetRef: MatBottomSheetRef<CategorySheetComponent>,@Inject(MAT_BOTTOM_SHEET_DATA) public data: {categories: Array<Category>}) {}
 
     ngOnInit(): void {
@@ -33,11 +34,17 @@ export class CategorySheetComponent implements OnInit {
       if(this.categoriesList[i].selected)
         this.categories.push(this.categoriesList[i]);
     }
-    if(this.categories != null)
-      this.categorySender.emit(this.categories);
+    if(this.categories.length != 0){
+      this.filterState.emit(true);
+    }
+    else {
+      this.filterState.emit(false);
+    }
+    this.categorySender.emit(this.categories);
     this._bottomSheetRef.dismiss();
   }
   onCancel(){
+    this.filterState.emit(false);
     this._bottomSheetRef.dismiss();
   }
 

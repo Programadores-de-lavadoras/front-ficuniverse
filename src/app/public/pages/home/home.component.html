@@ -1,4 +1,47 @@
 <div class="home-component">
-  <h1>Welcome to FicUniverse</h1>
-  <h3>Enjoy all the fanfics you could've imagine in one place!</h3>
+
+  <app-carousel [images]="images" [autoSlide]="true"></app-carousel>
+
+  <div class="may-like">
+    <h2>What you may like</h2>
+    <div class="fics">
+      <div  *ngFor="let fic of fanfics">
+        <app-home-fanfic [imgUrl]="fic.thumbnail" [title]="fic.title"></app-home-fanfic>
+      </div>
+    </div>
+  </div>
+
+  <div class="chosen">
+    <h2>Chosen for you</h2>
+    <div class="fics">
+      <div  *ngFor="let fic of fanfics">
+        <app-home-fanfic [imgUrl]="fic.thumbnail" [title]="fic.title"></app-home-fanfic>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="keep-reading">
+    <h2>Keep reading</h2>
+    <div class="fics">
+      <div  *ngFor="let fic of fanfics">
+        <app-home-fanfic [imgUrl]="fic.thumbnail" [title]="fic.title"></app-home-fanfic>
+      </div>
+    </div>
+  </div>
+
+  <div class="new-releases">
+    <h2>New releases</h2>
+    <div class="fics">
+      <div  *ngFor="let fic of fanfics">
+        <app-home-fanfic [imgUrl]="fic.thumbnail" [title]="fic.title"></app-home-fanfic>
+      </div>
+    </div>
+  </div>
+
+  <app-footer-content></app-footer-content>
 </div>
+
+
+

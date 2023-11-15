@@ -15,6 +15,8 @@ export class TagSheetComponent implements OnInit, AfterViewInit{
   tagsList: Array<Tag> = [];
   tags: Array<Tag> = [];
   @Output()tagsSender= new EventEmitter<Array<Tag>>();
+  @Output()filterState = new EventEmitter<boolean>();
+
 
   constructor(private tagService: TagsService, private _bottomSheetRef: MatBottomSheetRef<TagSheetComponent>,@Inject(MAT_BOTTOM_SHEET_DATA) public data: {tags: Array<Tag>}) {
   }
@@ -42,11 +44,17 @@ export class TagSheetComponent implements OnInit, AfterViewInit{
       if(this.tagsList[i].selected)
         this.tags.push(this.tagsList[i]);
     }
-    if(this.tags != null)
-      this.tagsSender.emit(this.tags);
+    if(this.tags.length != 0)
+      this.filterState.emit(true)
+    else
+      this.filterState.emit(false)
+
+    this.tagsSender.emit(this.tags);
     this._bottomSheetRef.dismiss();
+
   }
   onCancel(){
+    this.filterState.emit(false);
     this._bottomSheetRef.dismiss();
   }
 

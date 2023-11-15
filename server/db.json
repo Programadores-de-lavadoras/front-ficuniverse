@@ -71,12 +71,38 @@
       "id": 1,
       "title": "Somebody to love",
       "author": "SyadFanfic",
-      "summary": "(Legolas x OC) Todo el mundo tiene derecho a escoger su propio destino. Érewyn es la hermana menor de Éowyn y Éomer, y es un auténtico espíritu de la llanura de Rohan, completamente opuesto a su hermana, que siempre ha sido una guerrera. Cuando su padre es asesinado por los orcos, Érewyn se ve obligada a huir de su hogar y a emprender un peligroso viaje para encontrar un nuevo lugar al que llamar hogar..",
+      "summary": "Enamorse de un hombre durante los años 50 nunca fue algo que Taehyung o Jungkook hubieran imaginado. Especialmente cuando ambos estaban casados con sus hermosas esposas.\n\nO la historia de dos amantes que nunca fueron el uno para el otro, pero el destino encontró sus caminos de todos modos.",
       "publication_date": "2023-07-20",
       "language_id": 1,
       "status_id": 1,
       "saga_id": 1,
+      "views": 1302487,
+      "favorites": 82746,
       "thumbnail": "https://img.wattpad.com/cover/261408854-256-k737009.jpg",
+      "categories": [
+        {
+          "id": 2,
+          "name": "drama",
+          "selected": false
+        },
+        {
+          "id": 5,
+          "name": "romance",
+          "selected": false
+        }
+      ],
+      "tags": [
+        {
+          "id": 1,
+          "name": "bl",
+          "selected": false
+        },
+        {
+          "id": 4,
+          "name": "yaoi",
+          "selected": false
+        }
+      ],
       "chapters": [
         {
           "id": 1,
@@ -112,12 +138,43 @@
       "id": 2,
       "title": "Roommates",
       "author": "Scarlet Grant",
-      "summary": "El anillo único había sido destruido, el heredero perdido de Gondor, Aragorn hijo de Arathror, había vuelto, la era del hombre había comenzado y así lentamente los pueblos de la Tierra Media iban recuperando la paz. Pero un nuevo mal se cierne sobre el mundo, un mal que amenaza con destruirlo todo. Frodo, Sam, Merry y Pippin deberán volver a reunirse para enfrentarse a esta nueva amenaza, pero esta vez no estarán solos. Se les unirán nuevos aliados, entre ellos un misterioso joven que podría ser la clave para salvar la Tierra Media.",
+      "summary": "Jungkook forma parte del equipo universitario de boxeo. De manera recurrente, llega de noche a su casa con heridas o contusiones. Taehyung, su compañero de piso, siempre está allí para curarlo y mimarlo.",
       "publication_date": "2022-12-25",
       "language_id": 1,
       "status_id": 2,
       "saga_id": 1,
+      "views": 77234,
+      "favorites": 7346,
       "thumbnail": "https://img.wattpad.com/cover/323497674-256-k192373.jpg",
+      "categories": [
+        {
+          "id": 3,
+          "name": "comedy",
+          "selected": false
+        },
+        {
+          "id": 5,
+          "name": "romance",
+          "selected": false
+        }
+      ],
+      "tags": [
+        {
+          "id": 1,
+          "name": "bl",
+          "selected": false
+        },
+        {
+          "id": 4,
+          "name": "yaoi",
+          "selected": false
+        },
+        {
+          "id": 6,
+          "name": "enemy to lovers",
+          "selected": false
+        }
+      ],
       "chapters": [
         {
           "id": 5,
@@ -146,34 +203,166 @@
       "id": 3,
       "title": "La teoría de Kim",
       "author": "Azeneth2523",
-      "summary": "Hartlyn Black nunca despertó de la Maldición de la Muerte. En cambio, despertó en otro mundo, sola. Tan sola, que la Muerte le había ofrecido un compañero. Un guardia de la Montaña del Norte. Hartlyn deberá aprender a adaptarse a su nueva vida, a un mundo que no conoce y a un compañero que no entiende. Pero lo que Hartlyn no sabe es que, en realidad, su destino está ligado al de la Montaña del Norte y que ella es la única que puede salvarla.",
+      "summary": "La noche en la que Kim Taehyung se acercó a ese laboratorio coincidió con el día en el que Jeon Jungkook desapareció en las profundidades del lago que lo rodeaba; pero la fecha estaba mal, no cuadraba, había una diferencia de más de treinta años entre ambos sucesos. ",
       "publication_date": "2023-05-01",
       "language_id": 2,
       "status_id": 1,
       "saga_id": 2,
-      "thumbnail": "https://www.planetadelibros.com.pe/usuaris/libros/fotos/385/m_libros/portada_la-teoria-de-kim_jay-sandoval_202308172238.png"
+      "views": 19177234,
+      "favorites": 1173346,
+      "thumbnail": "https://www.planetadelibros.com.pe/usuaris/libros/fotos/385/m_libros/portada_la-teoria-de-kim_jay-sandoval_202308172238.png",
+      "categories": [
+        {
+          "id": 2,
+          "name": "drama",
+          "selected": false
+        },
+        {
+          "id": 4,
+          "name": "thriller",
+          "selected": false
+        }
+      ],
+      "tags": [
+        {
+          "id": 1,
+          "name": "bl",
+          "selected": false
+        },
+        {
+          "id": 5,
+          "name": "character x reader",
+          "selected": false
+        }
+      ],
+      "chapters": [
+        {
+          "id": 5,
+          "bookId": 2,
+          "order": 1,
+          "title": "Shinmen Takezo",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 6,
+          "bookId": 2,
+          "order": 2,
+          "title": "Akemi",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 7,
+          "bookId": 2,
+          "order": 3,
+          "title": "Oko",
+          "content": "Something really cool happens here B)."
+        }
+      ]
     },
     {
       "id": 4,
-      "title": "Unwanted butterflies",
-      "author": "tragedy1896",
-      "summary": "Essie Gardner, una estudiante de historia, era una persona completamente normal, a quien nada extraordinario le ocurría. Con motivo de su cumpleaños número veinte, Essie recibe un regalo inesperado: un anillo. Un anillo que, según la leyenda, es el único que puede derrotar a Sauron. Essie se verá obligada a viajar a la Tierra Media para cumplir su destino, pero en el camino se encontrará con peligros que nunca imaginó.",
+      "title": "Innocent",
+      "author": "ThaliaDeBarnes",
+      "summary": "Porque en un mundo en donde los omegas eran cazados y asesinados no había espacio para su amor.",
       "publication_date": "2023-03-08",
       "language_id": 2,
       "status_id": 1,
       "saga_id": 1,
-      "thumbnail": "https://img.wattpad.com/cover/157344127-416-k207140.jpg"
+      "views": 1877234,
+      "favorites": 277346,
+      "thumbnail": "https://img.wattpad.com/cover/116522012-256-k56926.jpg",
+      "categories": [
+        {
+          "id": 2,
+          "name": "drama",
+          "selected": false
+        }
+      ],
+      "tags": [
+        {
+          "id": 1,
+          "name": "bl",
+          "selected": false
+        }
+      ],
+      "chapters": [
+        {
+          "id": 5,
+          "bookId": 2,
+          "order": 1,
+          "title": "Shinmen Takezo",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 6,
+          "bookId": 2,
+          "order": 2,
+          "title": "Akemi",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 7,
+          "bookId": 2,
+          "order": 3,
+          "title": "Oko",
+          "content": "Something really cool happens here B)."
+        }
+      ]
     },
     {
       "title": "Pobre Kim",
-      "author": "El_Hobbit_Gris",
-      "summary": "Cinco años después de la Guerra del Anillo, Sauron ha regresado. Esta vez, no hay un Anillo Único para detenerlo. Frodo, Sam, Merry y Pippin deberán reunir a la Comunidad para enfrentarse a este nuevo desafío.",
+      "author": "DisgustInGucci",
+      "summary": "Taehyung debe soportar  las burlas de parte de la persona que hace que su corazón se acelere.",
       "publication_date": "2023-08-10",
       "language_id": "2",
       "status_id": "1",
       "saga_id": "1",
+      "views": 3752234,
+      "favorites": 460346,
       "id": 5,
-      "thumbnail": "https://img.wattpad.com/cover/103324876-416-k860974.jpg"
+      "thumbnail": "https://img.wattpad.com/cover/103324876-416-k860974.jpg",
+      "categories": [
+        {
+          "id": 3,
+          "name": "comedy",
+          "selected": false
+        }
+      ],
+      "tags": [
+        {
+          "id": 1,
+          "name": "bl",
+          "selected": false
+        },
+        {
+          "id": 5,
+          "name": "character x reader",
+          "selected": false
+        }
+      ],
+      "chapters": [
+        {
+          "id": 5,
+          "bookId": 2,
+          "order": 1,
+          "title": "Shinmen Takezo",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 6,
+          "bookId": 2,
+          "order": 2,
+          "title": "Akemi",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 7,
+          "bookId": 2,
+          "order": 3,
+          "title": "Oko",
+          "content": "Something really cool happens here B)."
+        }
+      ]
     }
   ],
   "usuarios": [
