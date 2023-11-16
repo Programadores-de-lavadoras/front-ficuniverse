@@ -3,11 +3,21 @@
     <a routerLink="/">
       <img src="assets/ficuniverse-logo.png" style="height: 60px; margin-top: 20px; padding-left: 50px " alt="FicUniverse Logo">
     </a>
-
-    <div *ngIf="userLogged(); else loginButton"   >
+    <div>
+      <a *ngIf="!userLogged()" routerLink="/login"  style="margin-right: 20px">
+        <button mat-raised-button color="primary" style="width: 100px">Login</button>
+      </a>
+      <a *ngIf="!userLogged()" routerLink="/register"  style="margin-right: 50px">
+        <button mat-raised-button color="primary" style="width: 100px">Register</button>
+      </a>
+    </div>
+    <div *ngIf="userLogged()">
       <div style="display: flex; align-items: center">
         <a routerLink="search">
-          <button mat-button color="primary">Search</button>
+          <button mat-button color="primary">Search
+          <mat-icon>search</mat-icon>
+          </button>
+
         </a>
         <a routerLink="creations" >
           <button mat-button color="primary">Creations</button>
@@ -22,6 +32,8 @@
         <button mat-button [matMenuTriggerFor]="crudMenu" color="primary">Cruds
           <mat-icon>keyboard_arrow_down</mat-icon>
         </button>
+        <button mat-button color="primary" (click)="logOut()">Log out
+        </button>
 
         <mat-menu #writingMenu="matMenu">
           <button mat-menu-item routerLink="my-fanfics/new">New fanfic</button>
@@ -33,15 +45,8 @@
           <button mat-menu-item routerLink="users-crud">Users</button>
           <button mat-menu-item routerLink="comments-crud">Comments</button>
         </mat-menu>
-
       </div>
-
     </div>
-    <ng-template #loginButton >
-      <a routerLink="/login"  style="margin-right: 50px">
-        <button mat-raised-button color="primary" style="width: 100px">Login</button>
-      </a>
-    </ng-template>
   </mat-toolbar>
 </div>
 

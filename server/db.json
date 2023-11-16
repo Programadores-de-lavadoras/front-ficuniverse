@@ -367,21 +367,21 @@
   ],
   "usuarios": [
     {
-      "Usuario": "pablito616",
-      "contrasenia": "insano63",
-      "correo": "pablito@gmail.com",
+      "userName": "pablito616",
+      "password": "insano63",
+      "email": "pablito@gmail.com",
       "id": 1
     },
     {
-      "Usuario": "Escritor desconocido 301",
-      "contrasenia": "123543634",
-      "correo": "anonimo63@gmail.com",
+      "userName": "Escritor desconocido 301",
+      "password": "123543634",
+      "email": "anonimo63@gmail.com",
       "id": 2
     },
     {
-      "Usuario": "sinfonia31",
-      "contrasenia": "sinfony123124",
-      "correo": "sinfoniasoledad@gmail.com",
+      "userName": "sinfonia31",
+      "password": "sinfony123124",
+      "email": "sinfoniasoledad@gmail.com",
       "id": 3
     }
   ],
