@@ -10,17 +10,22 @@ import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-fo
 import { FanficsComponent } from './ficuniverse/pages/fanfics/fanfics.component';
 import {UsersComponent} from "./users/pages/users/users.component";
 import {CommentsComponent} from "./comments/pages/comments/comments.component";
+import {LoginComponent} from "./public/pages/login/login.component";
+import {VerifyLoginService} from "./shared/services/verify-login.service";
+import {RegisterComponent} from "./public/pages/register/register.component";
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: 'authors', component: AuthorsComponent},
-  {path: 'search', component: SearchComponent},
-  {path: 'creations', component: CreationsComponent},
-  {path: 'write-fanfic', component: WriteFanficComponent},
-  {path: 'chapters-crud', component: ChaptersComponent},
-  {path: 'fanfic-crud', component: FanficsComponent},
-  {path: 'users-crud', component: UsersComponent},
-  {path: 'comments-crud', component: CommentsComponent},
+  {path: 'home', component: HomeComponent, },
+  {path: 'authors', component: AuthorsComponent, canActivate:[VerifyLoginService]},
+  {path: 'search', component: SearchComponent, canActivate:[VerifyLoginService]},
+  {path: 'creations', component: CreationsComponent, canActivate:[VerifyLoginService]},
+  {path: 'write-fanfic', component: WriteFanficComponent, canActivate:[VerifyLoginService]},
+  {path: 'chapters-crud', component: ChaptersComponent, canActivate:[VerifyLoginService]},
+  {path: 'fanfic-crud', component: FanficsComponent, canActivate:[VerifyLoginService]},
+  {path: 'users-crud', component: UsersComponent, canActivate:[VerifyLoginService]},
+  {path: 'comments-crud', component: CommentsComponent, canActivate:[VerifyLoginService]},
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent},
 

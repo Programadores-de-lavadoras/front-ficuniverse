@@ -54,6 +54,8 @@ import {MatChipsModule} from "@angular/material/chips";
 import {SharedDataService} from "./shared/services/shared-data.service";
 import {CarouselModule} from "./public/carousel/carousel.module";
 import { HomeFanficComponent } from './public/components/home-fanfic/home-fanfic.component';
+import { LoginComponent } from './public/pages/login/login.component';
+import { RegisterComponent } from './public/pages/register/register.component';
 
 
 @NgModule({
@@ -83,6 +85,8 @@ import { HomeFanficComponent } from './public/components/home-fanfic/home-fanfic
     CategorySheetComponent,
     TagSheetComponent,
     HomeFanficComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
