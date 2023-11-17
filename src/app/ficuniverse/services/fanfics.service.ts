@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { BaseService } from 'src/app/shared/services/base.service';
 import { Fanfic } from '../model/fanfic.entity';
 import { HttpClient } from '@angular/common/http';
-import {map} from "rxjs";
+import {Observable, map} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -19,4 +19,7 @@ return this.getAll().pipe(
     map(fanfics => fanfics.find(fanfic => fanfic.title === fanficName) ?? null)
     );
   }
+
+  
 }
+

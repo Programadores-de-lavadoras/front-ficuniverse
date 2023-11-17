@@ -13,6 +13,8 @@ import {CommentsComponent} from "./comments/pages/comments/comments.component";
 import {LoginComponent} from "./public/pages/login/login.component";
 import {VerifyLoginService} from "./shared/services/verify-login.service";
 import {RegisterComponent} from "./public/pages/register/register.component";
+import { ReadingComponent } from './ficuniverse/pages/reading/reading.component';
+import { DetailsComponent } from './ficuniverse/pages/details/details.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent, },
@@ -26,6 +28,8 @@ const routes: Routes = [
   {path: 'comments-crud', component: CommentsComponent, canActivate:[VerifyLoginService]},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
+  {path: 'details/:fanficId', component: DetailsComponent},
+  {path: 'reading', component: ReadingComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent},
 
