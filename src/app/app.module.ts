@@ -56,6 +56,8 @@ import {CarouselModule} from "./public/carousel/carousel.module";
 import { HomeFanficComponent } from './public/components/home-fanfic/home-fanfic.component';
 import { LoginComponent } from './public/pages/login/login.component';
 import { RegisterComponent } from './public/pages/register/register.component';
+import { ReadingComponent } from './ficuniverse/pages/reading/reading.component';
+import { DetailsComponent } from './ficuniverse/pages/details/details.component';
 
 
 @NgModule({
@@ -87,6 +89,8 @@ import { RegisterComponent } from './public/pages/register/register.component';
     HomeFanficComponent,
     LoginComponent,
     RegisterComponent,
+    ReadingComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
