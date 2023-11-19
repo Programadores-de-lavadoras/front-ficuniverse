@@ -32,7 +32,6 @@ const routes: Routes = [
   {path: 'reading', component: ReadingComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent},
-
 ];
 
 @NgModule({
