@@ -58,6 +58,7 @@ import { LoginComponent } from './public/pages/login/login.component';
 import { RegisterComponent } from './public/pages/register/register.component';
 import { ReadingComponent } from './ficuniverse/pages/reading/reading.component';
 import { DetailsComponent } from './ficuniverse/pages/details/details.component';
+import { ProfileComponent } from './users/components/profile/profile.component';
 
 
 @NgModule({
@@ -91,6 +92,7 @@ import { DetailsComponent } from './ficuniverse/pages/details/details.component'
     RegisterComponent,
     ReadingComponent,
     DetailsComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
