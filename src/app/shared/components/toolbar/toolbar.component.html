@@ -32,7 +32,8 @@
         <button mat-button [matMenuTriggerFor]="crudMenu" color="primary">Cruds
           <mat-icon>keyboard_arrow_down</mat-icon>
         </button>
-        <button mat-button color="primary" (click)="logOut()">Log out
+        <button mat-button [matMenuTriggerFor]="profileMenu" color="primary">Profile
+          <mat-icon>keyboard_arrow_down</mat-icon>
         </button>
 
         <mat-menu #writingMenu="matMenu">
@@ -44,6 +45,10 @@
           <button mat-menu-item routerLink="fanfic-crud">Fanfics</button>
           <button mat-menu-item routerLink="users-crud">Users</button>
           <button mat-menu-item routerLink="comments-crud">Comments</button>
+        </mat-menu>
+        <mat-menu #profileMenu="matMenu">
+          <button mat-menu-item routerLink="chapters-crud">My profile</button>
+          <button mat-button color="primary" (click)="logOut()">Log out</button>
         </mat-menu>
       </div>
     </div>
