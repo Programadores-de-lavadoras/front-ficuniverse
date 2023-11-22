@@ -3,6 +3,7 @@ import {VerifyLoginService} from "../../../shared/services/verify-login.service"
 import {LoginService} from "../../../shared/services/login.service";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {FormErrorStateMatcher} from "../../../shared/matcher/form-error-state-matcher";
+import {usuariosService} from "../../../users/services/usuarios.service";
 
 @Component({
   selector: 'app-login',
@@ -17,7 +18,7 @@ export class LoginComponent {
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required])
   });
-  constructor(private loginService: LoginService) {
+  constructor(private loginService: LoginService, private userService: usuariosService) {
   }
   doLogin(){
     this.loginService.login();
