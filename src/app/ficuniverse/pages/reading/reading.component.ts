@@ -11,7 +11,7 @@ export class ReadingComponent implements OnInit{
   selectedChapterId: number = 0; 
   selectedChapterTitle: string = '';
   selectedChapterContent: string = '';
-
+  categories: any[] = [];
 
   constructor(private chapterService: ChapterService) {}
 

@@ -3,14 +3,17 @@
   <div class="example-button-row">
     <span>
         Add to your likes
-    <button mat-icon-button matTooltip="Basic" aria-label="Example icon-button with a heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
+        <button mat-icon-button matTooltip="Add to favorites" aria-label="Add to favorites" (click)="addToFavorites()">
+          <mat-icon>favorite</mat-icon>
+        </button>        
     </span>
   </div>
 
   <div class="texge">
     <p>Genres</p>
+    <ul>
+      <li *ngFor="let category of fanfic.categories">{{ category.name }}</li>
+    </ul>
     <p>Description</p>
   </div>
 
@@ -25,21 +28,48 @@
 
 
 <div class="right-column">
-  <h3>{{ fanfic.title }}</h3>
   <mat-card class="examp-ca" *ngIf="fanfic.thumbnail && fanfic.views">
-    <mat-card-header>
-      <img mat-card-avatar src="{{ fanfic.thumbnail }}" alt="{{ fanfic.title }}">
-      <mat-card-title>{{ fanfic.title }}</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <p>{{ fanfic.views }}</p>
+    <mat-card-content >
+
+      <div >
+        <img  src="{{ fanfic.thumbnail }}" alt="{{ fanfic.title }}">
+      </div>
+
+        <div class="correcion">
+          <mat-card-title>{{ fanfic.title }}</mat-card-title>
+        </div>
+
+
+        <div class="info-row">
+          <div  class="div statistic">
+            <p>Views </p>
+            <p>{{ fanfic.favorites }}</p>
+          </div>
+          <div  class="statistic">
+            <p>Favorites</p>
+            <p>{{ fanfic.favorites }}</p>
+          </div>
+          <div  class="statistic">
+            <p> Chapters</p>
+            <p>{{ fanfic.chapters ? fanfic.chapters.length : 0 }}</p>
+          </div>
+        </div>
+
     </mat-card-content>
   </mat-card>
+
+  <mat-card *ngIf="fanfic.chapters && fanfic.chapters.length > 0" class="examp-ca">
+    <mat-card-content>
+      <h4 class="chapter-list-title">Chapter:</h4>
+      <ul>
+        <li *ngFor="let chapter of fanfic.chapters" class="chapter-item">
+          <a routerLink="/reading">Chapter {{ chapter.id }}</a>
+        </li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+
 </div>
 
-
-<a routerLink="/reading">
-  <button mat-button color="primary">Chapters</button>
-</a>
 
 </div>

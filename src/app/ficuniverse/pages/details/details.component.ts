@@ -32,6 +32,8 @@ export class DetailsComponent implements OnInit{
       );
     }
     
+    addToFavorites(): void {
+    }
   
   }
   
