@@ -8,7 +8,7 @@ import { ChapterService } from '../../services/chapter.service';
 })
 export class ReadingComponent implements OnInit{
   chapters: any[] = [];
-  selectedChapterId: number = 0; 
+  selectedChapterId: number = 0;
   selectedChapterTitle: string = '';
   selectedChapterContent: string = '';
 
@@ -20,7 +20,7 @@ export class ReadingComponent implements OnInit{
   }
 
   loadChapters() {
-    this.chapterService.getChapters().subscribe(
+    this.chapterService.getAll().subscribe(
       (data) => {
         this.chapters = data;
         //this.selectedChapterTitle = this.chapters[1].title;
@@ -32,12 +32,12 @@ export class ReadingComponent implements OnInit{
     );
   }
 
-  
-  
+
+
   onChapterChange() {
     console.log('Selected Chapter ID:', this.selectedChapterId);
     const selectedChapter = this.chapters.find(chapter => chapter.id === this.selectedChapterId);
-  
+
     if (selectedChapter) {
       this.selectedChapterTitle = selectedChapter.title;
       this.selectedChapterContent = selectedChapter.content;

@@ -19,7 +19,7 @@ export class RegisterComponent {
   constructor(private loginService: LoginService) {
   }
   doRegister(){
-    this.loginService.login();
+    //this.loginService.login();
   }
   togglePasswordVisibility(event: MouseEvent) {
     event.preventDefault();

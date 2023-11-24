@@ -58,7 +58,8 @@ import { LoginComponent } from './authentication/pages/login/login.component';
 import { RegisterComponent } from './authentication/pages/register/register.component';
 import { ReadingComponent } from './ficuniverse/pages/reading/reading.component';
 import { DetailsComponent } from './ficuniverse/pages/details/details.component';
-
+import { LoginErrorComponent } from './authentication/components/login-error/login-error.component';
+import {MatSnackBarModule, MatSnackBarRef} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -91,6 +92,7 @@ import { DetailsComponent } from './ficuniverse/pages/details/details.component'
     RegisterComponent,
     ReadingComponent,
     DetailsComponent,
+    LoginErrorComponent,
   ],
   imports: [
     BrowserModule,
@@ -119,7 +121,8 @@ import { DetailsComponent } from './ficuniverse/pages/details/details.component'
     MatListModule,
     MatLegacyChipsModule,
     MatChipsModule,
-    CarouselModule
+    CarouselModule,
+    MatSnackBarModule,
   ],
   providers: [FanficsService,SharedDataService],
   bootstrap: [AppComponent]
