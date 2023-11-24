@@ -7,15 +7,12 @@
         <mat-label>User Name</mat-label>
         <input matInput
                type="text"
-               formControlName="email"
-               placeholder="example@mail.com"
+               [formControl]="nameFormControl"
+               placeholder="Insano777"
                [errorStateMatcher]="matcher"
         >
-        <mat-error *ngIf="loginForm.controls['email'].hasError('email') && !loginForm.controls['email'].hasError('required')">
-          Please enter a valid email address
-        </mat-error>
-        <mat-error *ngIf="loginForm.controls['email'].hasError('required')">
-          Email is <strong>required</strong>
+        <mat-error *ngIf="nameFormControl.hasError('required')">
+          Username is <strong>required</strong>
         </mat-error>
       </mat-form-field>
 
@@ -24,14 +21,14 @@
         <mat-label>Email</mat-label>
         <input matInput
                type="email"
-               formControlName="email"
+               [formControl]="emailFormControl"
                placeholder="example@mail.com"
                [errorStateMatcher]="matcher"
         >
-        <mat-error *ngIf="loginForm.controls['email'].hasError('email') && !loginForm.controls['email'].hasError('required')">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
           Please enter a valid email address
         </mat-error>
-        <mat-error *ngIf="loginForm.controls['email'].hasError('required')">
+        <mat-error *ngIf="emailFormControl.hasError('required')">
           Email is <strong>required</strong>
         </mat-error>
       </mat-form-field>
@@ -40,7 +37,12 @@
       <mat-form-field>
         <mat-label>Password</mat-label>
         <input matInput
-               [type]="hidePassword ? 'password' : 'text'">
+               [type]="hidePassword ? 'password' : 'text'"
+               [formControl]="passwordFormControl"
+               [errorStateMatcher]="matcher">
+        <mat-error *ngIf="passwordFormControl.hasError('required')">
+          Password is <strong>required</strong>
+        </mat-error>
         <button
           mat-icon-button
           matSuffix

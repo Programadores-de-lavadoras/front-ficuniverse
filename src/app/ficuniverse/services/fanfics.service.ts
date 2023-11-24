@@ -14,12 +14,5 @@ export class FanficsService extends BaseService<Fanfic>{
     this.resourceEndpoint = '/fanfics'
    }
 
-getFanficsByName(fanficName: string){
-return this.getAll().pipe(
-    map(fanfics => fanfics.find(fanfic => fanfic.title === fanficName) ?? null)
-    );
-  }
-
-  
 }
 
