@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {LoginService} from "../../../shared/services/login.service";
+import {AuthService} from "../../../shared/services/auth.service";
 import {FormErrorStateMatcher} from "../../../shared/matcher/form-error-state-matcher";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 
@@ -16,7 +16,7 @@ export class RegisterComponent {
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required])
   });
-  constructor(private loginService: LoginService) {
+  constructor(private loginService: AuthService) {
   }
   doRegister(){
     //this.loginService.login();

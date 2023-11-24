@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {SharedDataService} from "../../services/shared-data.service";
-import {LoginService} from "../../services/login.service";
+import {AuthService} from "../../services/auth.service";
 import {CookieService} from "ngx-cookie-service";
 
 @Component({
@@ -12,7 +12,7 @@ export class ToolbarComponent {
   value: any = '';
   @Input() isLoged: boolean = true;
 
-  constructor(private sharedData: SharedDataService, private cookieService: CookieService, private loginService: LoginService) {
+  constructor(private sharedData: SharedDataService, private cookieService: CookieService, private loginService: AuthService) {
   }
 
 onInputChange(){
