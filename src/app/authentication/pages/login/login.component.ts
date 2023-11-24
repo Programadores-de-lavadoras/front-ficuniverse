@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {VerifyLoginService} from "../../../shared/services/verify-login.service";
-import {LoginService} from "../../../shared/services/login.service";
+import {AuthService} from "../../../shared/services/auth.service";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {FormErrorStateMatcher} from "../../../shared/matcher/form-error-state-matcher";
 import {usuariosService} from "../../../users/services/usuarios.service";
@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit{
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
   passwordFormControl = new FormControl('', [Validators.required])
 
-  constructor(private loginService: LoginService, private userService: usuariosService, private _snackBar: MatSnackBar, private cookieService: CookieService, private router: Router) {
+  constructor(private loginService: AuthService, private userService: usuariosService, private _snackBar: MatSnackBar, private cookieService: CookieService, private router: Router) {
   }
 
   ngOnInit(): void {

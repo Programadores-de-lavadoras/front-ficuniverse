@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {BehaviorSubject, Observable} from "rxjs";
 import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree} from "@angular/router";
-import {LoginService} from "./login.service";
+import {AuthService} from "./auth.service";
 import {CookieService} from "ngx-cookie-service";
 
 @Injectable({
@@ -11,7 +11,7 @@ export class VerifyLoginService implements CanActivate{
   private loginState = new BehaviorSubject<boolean>(false);
   currentLoginState = this.loginState.asObservable();
 
-  constructor(private router: Router, private loginService: LoginService, private cookieService: CookieService) { }
+  constructor(private router: Router, private loginService: AuthService, private cookieService: CookieService) { }
   changeLoginState(loginState: boolean){
     this.loginState.next(loginState);
   }

@@ -58,6 +58,8 @@ import { LoginComponent } from './authentication/pages/login/login.component';
 import { RegisterComponent } from './authentication/pages/register/register.component';
 import { ReadingComponent } from './ficuniverse/pages/reading/reading.component';
 import { DetailsComponent } from './ficuniverse/pages/details/details.component';
+import { ProfileComponent } from './users/components/profile/profile.component';
+
 import { LoginErrorComponent } from './authentication/components/login-error/login-error.component';
 import {MatSnackBarModule, MatSnackBarRef} from '@angular/material/snack-bar';
 
@@ -92,6 +94,7 @@ import {MatSnackBarModule, MatSnackBarRef} from '@angular/material/snack-bar';
     RegisterComponent,
     ReadingComponent,
     DetailsComponent,
+    ProfileComponent,
     LoginErrorComponent,
   ],
   imports: [

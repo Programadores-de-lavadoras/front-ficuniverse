@@ -15,6 +15,7 @@ import {VerifyLoginService} from "./shared/services/verify-login.service";
 import {RegisterComponent} from "./authentication/pages/register/register.component";
 import { ReadingComponent } from './ficuniverse/pages/reading/reading.component';
 import { DetailsComponent } from './ficuniverse/pages/details/details.component';
+import {ProfileComponent} from "./users/components/profile/profile.component";
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent, },
@@ -26,13 +27,13 @@ const routes: Routes = [
   {path: 'fanfic-crud', component: FanficsComponent, canActivate:[VerifyLoginService]},
   {path: 'users-crud', component: UsersComponent, canActivate:[VerifyLoginService]},
   {path: 'comments-crud', component: CommentsComponent, canActivate:[VerifyLoginService]},
+  {path: 'myprofile', component: ProfileComponent, canActivate:[VerifyLoginService]},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'details/:fanficId', component: DetailsComponent, canActivate:[VerifyLoginService]},
   {path: 'reading', component: ReadingComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent},
-
 ];
 
 @NgModule({
