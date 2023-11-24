@@ -10,9 +10,9 @@ import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-fo
 import { FanficsComponent } from './ficuniverse/pages/fanfics/fanfics.component';
 import {UsersComponent} from "./users/pages/users/users.component";
 import {CommentsComponent} from "./comments/pages/comments/comments.component";
-import {LoginComponent} from "./public/pages/login/login.component";
+import {LoginComponent} from "./authentication/pages/login/login.component";
 import {VerifyLoginService} from "./shared/services/verify-login.service";
-import {RegisterComponent} from "./public/pages/register/register.component";
+import {RegisterComponent} from "./authentication/pages/register/register.component";
 import { ReadingComponent } from './ficuniverse/pages/reading/reading.component';
 import { DetailsComponent } from './ficuniverse/pages/details/details.component';
 import {ProfileComponent} from "./users/components/profile/profile.component";
@@ -30,7 +30,7 @@ const routes: Routes = [
   {path: 'myprofile', component: ProfileComponent, canActivate:[VerifyLoginService]},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'details/:fanficId', component: DetailsComponent},
+  {path: 'details/:fanficId', component: DetailsComponent, canActivate:[VerifyLoginService]},
   {path: 'reading', component: ReadingComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent},
