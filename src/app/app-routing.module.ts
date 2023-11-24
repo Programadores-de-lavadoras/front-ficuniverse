@@ -15,7 +15,7 @@ import {VerifyLoginService} from "./shared/services/verify-login.service";
 import {RegisterComponent} from "./authentication/pages/register/register.component";
 import { ReadingComponent } from './ficuniverse/pages/reading/reading.component';
 import { DetailsComponent } from './ficuniverse/pages/details/details.component';
-import {ProfileComponent} from "./users/components/profile/profile.component";
+import {ProfileComponent} from "./profile/components/profile/profile.component";
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent, },
