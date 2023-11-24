@@ -60,6 +60,8 @@ import { ReadingComponent } from './ficuniverse/pages/reading/reading.component'
 import { DetailsComponent } from './ficuniverse/pages/details/details.component';
 import { ProfileComponent } from './users/components/profile/profile.component';
 
+import { LoginErrorComponent } from './authentication/components/login-error/login-error.component';
+import {MatSnackBarModule, MatSnackBarRef} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -93,6 +95,7 @@ import { ProfileComponent } from './users/components/profile/profile.component';
     ReadingComponent,
     DetailsComponent,
     ProfileComponent,
+    LoginErrorComponent,
   ],
   imports: [
     BrowserModule,
@@ -121,7 +124,8 @@ import { ProfileComponent } from './users/components/profile/profile.component';
     MatListModule,
     MatLegacyChipsModule,
     MatChipsModule,
-    CarouselModule
+    CarouselModule,
+    MatSnackBarModule,
   ],
   providers: [FanficsService,SharedDataService],
   bootstrap: [AppComponent]
