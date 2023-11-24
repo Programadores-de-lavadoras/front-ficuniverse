@@ -1,18 +1,23 @@
 import {environment} from "../../../environments/environment";
 import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
 import {catchError, retry, throwError} from "rxjs";
+import {JwtInterceptorInterceptor} from "./interceptor/jwt-interceptor.interceptor";
+import {CookieService} from "ngx-cookie-service";
 
 
 export class BaseService<T> {
   basePath: string = `${environment.serverBasePath}`;
   resourceEndpoint: string = '/resources';
 
+  token: string = '';
   httpOptions = {
     headers: new HttpHeaders({
       'Content-type': 'application/json'
     })
   }
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private baseCookieService: CookieService) {
+    this.token = this.baseCookieService.get('token')
+  }
 
   handleError(error: HttpErrorResponse){
     if(error.error instanceof ErrorEvent){
@@ -41,7 +46,7 @@ export class BaseService<T> {
   }
 
   getAll(){
-    return this.http.get<T[]>(this.resourcePath(), this.httpOptions)
+    return this.http.get<T[]>(this.resourcePath(),this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 }

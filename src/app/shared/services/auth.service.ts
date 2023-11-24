@@ -14,8 +14,8 @@ import {RegisterRequest} from "../model/register-request.entity";
 })
 export class AuthService extends BaseService<LoginResponse>{
   private loged: boolean = false;
-  constructor(private router: Router, http: HttpClient, private httpClient: HttpClient, private cookieService: CookieService) {
-    super(http);
+  constructor(private router: Router, http: HttpClient, private httpClient: HttpClient, baseCookieService: CookieService ,private cookieService: CookieService) {
+    super(http, baseCookieService);
     this.resourceEndpoint = '/auth'
   }
   isAuthenticated(): boolean {
