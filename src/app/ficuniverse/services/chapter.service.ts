@@ -13,6 +13,9 @@ export class ChapterService extends BaseService<Chapter>{
     super(http);
     this.resourceEndpoint = '/chapters'
   }
+  getCategories() {
+    throw new Error('Method not implemented.');
+  }
 
   /*getChapters(): Observable<any[]>{
     return this.http.get<any[]>(`${this.apiUrl}/chapters`);

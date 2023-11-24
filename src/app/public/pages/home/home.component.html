@@ -6,7 +6,9 @@
     <h2>What you may like</h2>
     <div class="fics">
       <div  *ngFor="let fic of fanfics">
+        <a [routerLink]="['/details', fic.id]">
         <app-home-fanfic [imgUrl]="fic.thumbnail" [title]="fic.title"></app-home-fanfic>
+      </a>
       </div>
     </div>
   </div>
@@ -15,7 +17,9 @@
     <h2>Chosen for you</h2>
     <div class="fics">
       <div  *ngFor="let fic of fanfics">
+        <a [routerLink]="['/details', fic.id]">
         <app-home-fanfic [imgUrl]="fic.thumbnail" [title]="fic.title"></app-home-fanfic>
+      </a>
       </div>
     </div>
 
@@ -37,7 +41,9 @@
     <h2>New releases</h2>
     <div class="fics">
       <div  *ngFor="let fic of fanfics">
+        <a [routerLink]="['/details', fic.id]">
         <app-home-fanfic [imgUrl]="fic.thumbnail" [title]="fic.title"></app-home-fanfic>
+      </a>
       </div>
     </div>
   </div>
