@@ -9,14 +9,14 @@ export class BaseService<T> {
   basePath: string = `${environment.serverBasePath}`;
   resourceEndpoint: string = '/resources';
 
-  token: string = '';
+
   httpOptions = {
     headers: new HttpHeaders({
       'Content-type': 'application/json'
     })
   }
-  constructor(private http: HttpClient, private baseCookieService: CookieService) {
-    this.token = this.baseCookieService.get('token')
+  constructor(private http: HttpClient) {
+
   }
 
   handleError(error: HttpErrorResponse){

@@ -3,15 +3,14 @@ import { Injectable } from '@angular/core';
 import { Observable, catchError } from 'rxjs';
 import {BaseService} from "../../shared/services/base.service";
 import {Fanfic} from "../model/fanfic.entity";
-import {CookieService} from "ngx-cookie-service";
 
 @Injectable({
   providedIn: 'root'
 })
 export class DetailfanficService extends BaseService<Fanfic>{
 
-    constructor(http: HttpClient, private httpClient: HttpClient, baseCookieService: CookieService) {
-      super(http, baseCookieService);
+    constructor(http: HttpClient, private httpClient: HttpClient) {
+      super(http);
       this.resourceEndpoint='/fanfics'
     }
 
