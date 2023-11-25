@@ -15,9 +15,10 @@ import {VerifyLoginService} from "./shared/services/verify-login.service";
 import {RegisterComponent} from "./authentication/pages/register/register.component";
 import { ReadingComponent } from './ficuniverse/pages/reading/reading.component';
 import { DetailsComponent } from './ficuniverse/pages/details/details.component';
-import {ProfileComponent} from "./users/components/profile/profile.component";
+import {ProfileComponent} from "./profile/components/profile/profile.component";
 import {MyFanficsComponent} from "./ficuniverse/pages/my-fanfics/my-fanfics.component";
 import {WriteChapterComponent} from "./ficuniverse/pages/write-chapter/write-chapter.component";
+
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent, },
