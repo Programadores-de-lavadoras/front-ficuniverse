@@ -12,7 +12,7 @@ export class ToolbarComponent {
   value: any = '';
   @Input() isLoged: boolean = true;
 
-  constructor(private sharedData: SharedDataService, private cookieService: CookieService, private loginService: AuthService) {
+  constructor(private sharedData: SharedDataService, private cookieService: CookieService, private authService: AuthService) {
   }
 
 onInputChange(){
@@ -24,7 +24,7 @@ onInputChange(){
   }
 
   logOut(){
-    this.loginService.logout();
+    this.authService.logout();
   }
 
 }
