@@ -5,7 +5,7 @@
         Add to your likes
         <button mat-icon-button matTooltip="Add to favorites" aria-label="Add to favorites" (click)="addToFavorites()">
           <mat-icon>favorite</mat-icon>
-        </button>        
+        </button>
     </span>
   </div>
 
@@ -18,7 +18,7 @@
   </div>
 
   <mat-card class="example-card">
-    
+
     <mat-card-content>
       <p>{{ fanfic.summary }}</p>
     </mat-card-content>
@@ -63,7 +63,7 @@
       <h4 class="chapter-list-title">Chapter:</h4>
       <ul>
         <li *ngFor="let chapter of fanfic.chapters" class="chapter-item">
-          <a routerLink="/reading">Chapter {{ chapter.id }}</a>
+          <a [routerLink]="['/reading', fanficId,chapter.id]">{{ chapter.title }}</a>
         </li>
       </ul>
     </mat-card-content>

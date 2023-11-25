@@ -8,19 +8,19 @@ import { DetailfanficService } from '../../services/detailfanfic.service';
   styleUrls: ['./details.component.scss']
 })
 export class DetailsComponent implements OnInit{
-    fanficId: number = 0; 
+    fanficId: number = 0;
     fanfic: any;
-  
-  
+
+
     constructor(private route: ActivatedRoute, private detailfanficService: DetailfanficService) {}
-  
+
     ngOnInit() {
       this.route.params.subscribe((params) => {
-        this.fanficId = +params['fanficId']; // Convierte a número (si es necesario)
+        this.fanficId = +params['fanficId'];
         this.loadFanficDetails();
       });
     }
-  
+
     loadFanficDetails() {
       this.detailfanficService.getFanficById(this.fanficId).subscribe(
         (fanfic) => {
@@ -31,9 +31,9 @@ export class DetailsComponent implements OnInit{
         }
       );
     }
-    
+
     addToFavorites(): void {
     }
-  
+
   }
-  
+
