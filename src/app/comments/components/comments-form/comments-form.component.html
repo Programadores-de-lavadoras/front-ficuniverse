@@ -4,10 +4,14 @@
 <form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
   <div mat-dialog-content class="content">
     <div class="row">
-      <mat-form-field appearance="outline">
-        <mat-label>Usuario</mat-label>
-        <input matInput type ="text" placeholder="Ex. Carlos123" formControlName="Usuario">
-      </mat-form-field>
+
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Contenido</mat-label>
+          <input matInput placeholder="Ex. Increible" formControlName="Contenido">
+        </mat-form-field>
+      </div>
+
       <mat-form-field appearance="outline">
         <mat-label>Fecha de publicación</mat-label>
         <input matInput [matDatepicker]="picker" formControlName="Fecha">
@@ -17,15 +21,8 @@
       </mat-form-field>
     </div>
 
-    <div class="row">
-      <mat-form-field appearance="outline">
-        <mat-label>Contenido</mat-label>
-        <input matInput placeholder="Ex. Increible" formControlName="Contenido">
-      </mat-form-field>
-    </div>
   </div>
-  <div mat-dialog-action
-       form>
+  <div mat-dialog-actions form>
     <button mat-raised-button>Cancelar </button>
     <button mat-raised-button color ="primary" type="submit">Publicar</button>
   </div>
