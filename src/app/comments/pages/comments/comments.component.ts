@@ -12,10 +12,10 @@ import {CommentsFormComponent} from "../../components/comments-form/comments-for
   styleUrls: ['./comments.component.scss']
 })
 export class CommentsComponent implements OnInit{
-  displayedColumns: string[] = ['Content',
-    'PublicationDate',
-    'Upvote',
-    'Downvote',
+  displayedColumns: string[] = ['Usuario',
+    'Contenido',
+    'Fecha',
+    'id',
     'action',
   ];
   dataSource!: MatTableDataSource<any>;
