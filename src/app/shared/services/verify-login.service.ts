@@ -11,7 +11,7 @@ export class VerifyLoginService implements CanActivate{
   private loginState = new BehaviorSubject<boolean>(false);
   currentLoginState = this.loginState.asObservable();
 
-  constructor(private router: Router, private authService: AuthService, private cookieService: CookieService) { }
+  constructor(private router: Router, private loginService: AuthService, private cookieService: CookieService) { }
   changeLoginState(loginState: boolean){
     this.loginState.next(loginState);
   }

@@ -1,4 +1,4 @@
 export const environment = {
-    serverBasePath: undefined
+    serverBasePath: "localhost:8090"
 };
 

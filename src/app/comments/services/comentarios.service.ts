@@ -9,13 +9,13 @@ export class ComentariosService {
 
   constructor(private _http: HttpClient) { }
   añadirComentario(data: any): Observable<any>{
-    return this._http.post('http://localhost:3000/comentarios', data);
+    return this._http.post('http://localhost:4200/comentarios', data);
   }
 
   getListaComentarios(): Observable<any> {
-    return this._http.get('http://localhost:3000/comentarios');
+    return this._http.get('http://localhost:4200/comentarios');
   }
   deleteComentario(id: number): Observable<any>{
-    return this._http.delete(`http://localhost:3000/comentarios/${id}`)
+    return this._http.delete(`http://localhost:4200/comentarios/${id}`)
   }
 }
