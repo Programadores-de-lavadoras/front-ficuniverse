@@ -16,6 +16,8 @@ import {RegisterComponent} from "./authentication/pages/register/register.compon
 import { ReadingComponent } from './ficuniverse/pages/reading/reading.component';
 import { DetailsComponent } from './ficuniverse/pages/details/details.component';
 import {ProfileComponent} from "./users/components/profile/profile.component";
+import {MyFanficsComponent} from "./ficuniverse/pages/my-fanfics/my-fanfics.component";
+import {WriteChapterComponent} from "./ficuniverse/pages/write-chapter/write-chapter.component";
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent, },
@@ -23,6 +25,8 @@ const routes: Routes = [
   {path: 'search', component: SearchComponent, canActivate:[VerifyLoginService]},
   {path: 'creations', component: CreationsComponent, canActivate:[VerifyLoginService]},
   {path: 'write-fanfic', component: WriteFanficComponent, canActivate:[VerifyLoginService]},
+  {path: 'write-chapter', component: WriteChapterComponent, canActivate:[VerifyLoginService]},
+  {path: 'my-fanfics', component: MyFanficsComponent, canActivate:[VerifyLoginService]},
   {path: 'chapters-crud', component: ChaptersComponent, canActivate:[VerifyLoginService]},
   {path: 'fanfic-crud', component: FanficsComponent, canActivate:[VerifyLoginService]},
   {path: 'users-crud', component: UsersComponent, canActivate:[VerifyLoginService]},
