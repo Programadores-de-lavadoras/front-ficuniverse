@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { ChapterService } from '../../services/chapter.service';
+import {Fanfic} from "../../model/fanfic.entity";
+import {Chapter} from "../../../chapters/model/chapter.entity";
+import {ActivatedRoute} from "@angular/router";
+import {DetailfanficService} from "../../services/detailfanfic.service";
 
 @Component({
   selector: 'app-reading',
@@ -7,27 +11,35 @@ import { ChapterService } from '../../services/chapter.service';
   styleUrls: ['./reading.component.scss']
 })
 export class ReadingComponent implements OnInit{
+  fanficId: number = 0;
+  chapterId: number = 0;
+  fanfic: any;
+
+
   chapters: any[] = [];
   selectedChapterId: number = 0;
   selectedChapterTitle: string = '';
   selectedChapterContent: string = '';
   categories: any[] = [];
-
-  constructor(private chapterService: ChapterService) {}
-
-  ngOnInit() {
-    this.loadChapters();
+  constructor(private chapterService: ChapterService, private route: ActivatedRoute, private detailfanficService: DetailfanficService) {
   }
 
-  loadChapters() {
-    this.chapterService.getAll().subscribe(
-      (data) => {
-        this.chapters = data;
-        //this.selectedChapterTitle = this.chapters[1].title;
-        //this.selectedChapterContent = this.chapters[1].content;
+  ngOnInit() {
+    this.route.params.subscribe((params) => {
+      this.fanficId = +params['fanficId'];
+      this.chapterId = +params['chapterId'];
+      this.loadFanficDetails();
+    });
+  }
+
+
+  loadFanficDetails() {
+    this.detailfanficService.getFanficById(this.fanficId).subscribe(
+      (fanfic) => {
+        this.fanfic = fanfic;
       },
       (error) => {
-        console.error('Error al cargar los capítulos', error);
+        console.error('Error al cargar los detalles del fanfic', error);
       }
     );
   }
@@ -35,8 +47,8 @@ export class ReadingComponent implements OnInit{
 
 
   onChapterChange() {
-    console.log('Selected Chapter ID:', this.selectedChapterId);
-    const selectedChapter = this.chapters.find(chapter => chapter.id === this.selectedChapterId);
+    console.log('Selected Chapter ID:', this.selectedChapterTitle);
+    const selectedChapter = this.fanfic.chapters.find((chapter : {title: String}) => chapter.title === this.selectedChapterTitle);
 
     if (selectedChapter) {
       this.selectedChapterTitle = selectedChapter.title;

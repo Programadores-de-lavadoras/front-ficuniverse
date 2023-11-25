@@ -1,40 +1,40 @@
 <div class="mejorando">
     <div class="left-column">
       <span>
-        Chapter: 
+        Chapter:
       <mat-form-field>
         <mat-label>Chapter</mat-label>
-        <mat-select [(ngModel)]="selectedChapterId" (ngModelChange)="onChapterChange()">
-          <mat-option *ngFor="let chapter of chapters" [value]="chapter.id">{{ chapter.id }}</mat-option>
+        <mat-select [(ngModel)]="selectedChapterTitle" (ngModelChange)="onChapterChange()">
+          <mat-option *ngFor="let chapter of fanfic.chapters" [value]="chapter.title">{{ chapter.title }}</mat-option>
         </mat-select>
       </mat-form-field>
     </span>
-  
+
     <div class="example-button-row">
       <span>
           Add to your likes
-      <button mat-icon-button matTooltip="Basic" aria-label="Example icon-button with a heart icon">
+      <button mat-icon-button matTooltip="Basic" aria-label="Icon-button with a heart icon">
         <mat-icon>favorite</mat-icon>
       </button>
       </span>
     </div>
-  
+
     <div class="texge">
       <p>Genres</p>
       <p>Plot</p>
     </div>
-  
+
     <mat-card class="example-card">
-      
+
       <mat-card-content>
-        <p>{{ selectedChapterContent }}</p>
+        <p>{{ fanfic.summary }}</p>
       </mat-card-content>
     </mat-card>
-  
-  </div> 
-    
+
+  </div>
+
     <div class="right-column">
-      <h3>Chapter {{selectedChapterId}}</h3>
+      <h3>Chapter {{selectedChapterTitle}}</h3>
     <mat-card class="examp-ca" *ngIf="selectedChapterTitle && selectedChapterContent">
       <mat-card-header>
         <mat-card-title>{{ selectedChapterTitle }}</mat-card-title>
@@ -44,5 +44,5 @@
       </mat-card-content>
     </mat-card>
   </div>
-  
+
   </div>

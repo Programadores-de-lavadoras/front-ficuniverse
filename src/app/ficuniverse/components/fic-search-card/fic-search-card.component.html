@@ -1,4 +1,4 @@
-<mat-card class="fic-card" (click)="clicked()">
+<mat-card class="fic-card" [routerLink]="['/details', fanfic.id]" (click)="clicked()">
     <div class="fic-card-image">
       <img mat-card-image [src]="fanfic.thumbnail" [alt]="fanfic.title" height="300px" width="auto">
     </div>

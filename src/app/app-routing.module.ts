@@ -35,7 +35,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'details/:fanficId', component: DetailsComponent, canActivate:[VerifyLoginService]},
-  {path: 'reading', component: ReadingComponent},
+  {path: 'reading/:fanficId/:chapterId', component: ReadingComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent},
 ];
