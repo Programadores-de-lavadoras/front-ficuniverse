@@ -3,7 +3,7 @@ import {
   HttpRequest,
   HttpHandler,
   HttpEvent,
-  HttpInterceptor
+  HttpInterceptor, HTTP_INTERCEPTORS
 } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import {CookieService} from "ngx-cookie-service";
@@ -24,6 +24,12 @@ export class JwtInterceptorInterceptor implements HttpInterceptor {
         }
       })
     }
-    return next.handle(request);
+    return next.handle(req);
   }
+}
+
+export const jwtInterceptor ={
+  provide: HTTP_INTERCEPTORS,
+  useClass: JwtInterceptorInterceptor,
+  multi: true,
 }
