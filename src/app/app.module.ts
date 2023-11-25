@@ -62,7 +62,6 @@ import { ProfileComponent } from './users/components/profile/profile.component';
 
 import { LoginErrorComponent } from './authentication/components/login-error/login-error.component';
 import {MatSnackBarModule, MatSnackBarRef} from '@angular/material/snack-bar';
-import {jwtInterceptor} from "./shared/services/interceptor/jwt-interceptor.interceptor";
 
 @NgModule({
   declarations: [
@@ -128,7 +127,7 @@ import {jwtInterceptor} from "./shared/services/interceptor/jwt-interceptor.inte
     CarouselModule,
     MatSnackBarModule,
   ],
-  providers: [FanficsService,SharedDataService, jwtInterceptor],
+  providers: [FanficsService,SharedDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

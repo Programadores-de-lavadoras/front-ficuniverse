@@ -1,10 +1,10 @@
 export class RegisterRequest {
-  userName: String;
+  user_name: String;
   email: String;
   password: String;
   role: String;
   constructor(user_name: String, email: String, password: String, role: String) {
-    this.userName = user_name;
+    this.user_name = user_name;
     this.email = email;
     this.password = password;
     this.role = role;

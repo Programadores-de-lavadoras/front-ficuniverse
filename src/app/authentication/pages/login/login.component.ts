@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit{
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
   passwordFormControl = new FormControl('', [Validators.required])
 
-  constructor(private authService: AuthService, private userService: usuariosService, private _snackBar: MatSnackBar, private cookieService: CookieService, private router: Router) {
+  constructor(private loginService: AuthService, private userService: usuariosService, private _snackBar: MatSnackBar, private cookieService: CookieService, private router: Router) {
   }
 
   ngOnInit(): void {
@@ -38,9 +38,9 @@ export class LoginComponent implements OnInit{
   doLogin(){
     let loginRequest: LoginRequest;
     loginRequest = new LoginRequest(this.emailFormControl.value!, this.passwordFormControl.value!);
-    this.authService.login(loginRequest).subscribe((data) =>{
+    this.loginService.login(loginRequest).subscribe((data) =>{
       this.cookieService.set('token', data.access_token);
-      if(this.authService.loginCheck()){
+      if(this.loginService.loginCheck()){
         this.router.navigate(['/']);
       }
       else this.toggleMessageError();
